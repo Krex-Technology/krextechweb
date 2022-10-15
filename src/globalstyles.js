@@ -1,13 +1,13 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
    *,
    *::before,
    *::after {
       box-sizing: border-box;
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Ubuntu', sans-serif;
    }
  
    html {

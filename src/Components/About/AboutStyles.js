@@ -4,6 +4,7 @@ export const FlexWrap = styled.div`
    display: flex;
    width: 100%;
    justify-content: space-between;
+   /* background: red; */
    align-content: center;
    align-items: center;
    margin: 4rem 0 0;
@@ -54,11 +55,18 @@ export const FlexWrap = styled.div`
    .cont {
       width: 50%;
       height: 100%;
-      max-height: 500px;
+      filter: brightness(90%);
+      animation: zoom-in-zoom-out 3s ease infinite;
+      overflow: hidden;
+      /* max-height: 500px; */
 
       img {
          width: 100%;
          object-fit: cover;
+         animation-name: spin;
+         animation-duration: 30000ms;
+         animation-iteration-count: infinite;
+         animation-timing-function: linear;
       }
    }
 
@@ -67,6 +75,27 @@ export const FlexWrap = styled.div`
          width: 100%;
       }
       display: block;
+   }
+
+   @keyframes spin {
+      from {
+         transform: rotate(0deg);
+      }
+      to {
+         transform: rotate(360deg);
+      }
+   }
+
+   @keyframes zoom-in-zoom-out {
+      0% {
+         transform: scale(0.91, 0.91);
+      }
+      50% {
+         transform: scale(1.1, 1.1);
+      }
+      100% {
+         transform: scale(0.91, 0.91);
+      }
    }
 `;
 
