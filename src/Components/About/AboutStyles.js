@@ -4,11 +4,14 @@ export const FlexWrap = styled.div`
    display: flex;
    width: 100%;
    justify-content: space-between;
+   align-content: center;
+   align-items: center;
    margin: 4rem 0 0;
    padding: 0;
 
    h1 {
-      font-size: clamp(1rem, 4vw, 3rem);
+      font-size: clamp(1rem, 4vw, 2rem);
+      margin-bottom: 1rem;
       font-weight: 600;
    }
 
@@ -48,16 +51,25 @@ export const FlexWrap = styled.div`
       height: 4px;
    }
 
-   .years {
-   }
-
    .cont {
       width: 50%;
+      height: 100%;
+      max-height: 500px;
+
+      img {
+         width: 100%;
+         object-fit: cover;
+      }
    }
 
    @media screen and (max-width: 790px) {
+      .cont {
+         width: 100%;
+      }
       display: block;
    }
 `;
 
-export const AbtWrapper = styled.div``;
+export const AbtWrapper = styled.div`
+   width: 50%;
+`;

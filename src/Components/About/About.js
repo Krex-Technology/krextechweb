@@ -1,6 +1,7 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import { AbtWrapper, FlexWrap } from "./AboutStyles";
-// import sample from "../../assets/images/sample.jpg";
+import dcb2 from "../../assets/images/dcb2.png";
 import SubAbout from "../SubAbout/SubAbout";
 
 const About = ({ abtref }) => {
@@ -30,7 +31,7 @@ const About = ({ abtref }) => {
             </div>
          </AbtWrapper>
          <div className="cont">
-            
+            <img src={dcb2} alt="tech image" />
          </div>
       </FlexWrap>
    );
