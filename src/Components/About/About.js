@@ -1,6 +1,5 @@
 import React from "react";
 import { AbtWrapper } from "./AboutStyles";
-import sample from "../../assets/images/sample.jpg";
 import SubAbout from "../SubAbout/SubAbout";
 
 const About = ({ abtref }) => {
