@@ -35,7 +35,7 @@ export const FlexWrap = styled.div`
       list-style: none;
    }
 
-   h3 {
+   h3, p, li {
       font-size: clamp(1rem, 3vw, 2rem);
       font-weight: 400;
    }

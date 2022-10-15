@@ -29,7 +29,9 @@ const About = ({ abtref }) => {
                </h1>
             </div>
          </AbtWrapper>
-         <div className="cont"></div>
+         <div className="cont">
+            
+         </div>
       </FlexWrap>
    );
 };
