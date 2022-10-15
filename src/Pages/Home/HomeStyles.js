@@ -35,16 +35,16 @@ export const HomeWrapper = styled.div`
     }
     
     .imgWrapper {
-     filter: brightness(70%);
+     /* filter: brightness(70%); */
       width: 100%;
       max-width: 740px;
-      height: 640px;
+      /* height: 640px; */
       display: flex;
       justify-content: end;
 
       img {
-         width: 80%;
-         object-fit: cover;
+         width: 100%;
+         /* object-fit: cover; */
          /* animation-name: spin;
          animation-duration: 30000ms;
          animation-iteration-count: infinite;

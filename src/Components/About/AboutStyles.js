@@ -55,7 +55,7 @@ export const FlexWrap = styled.div`
    .cont {
       width: 50%;
       height: 100%;
-      filter: brightness(70%);
+      filter: brightness(90%);
       animation: zoom-in-zoom-out 3s ease infinite;
       overflow: hidden;
       /* max-height: 500px; */

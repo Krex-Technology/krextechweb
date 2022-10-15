@@ -26,6 +26,7 @@ const GlobalStyles = createGlobalStyle`
     /* letter-spacing: 0.02rem; */
     line-height: 2.5rem;
     background: #e1e7ed;
+    background: #fafafc;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
