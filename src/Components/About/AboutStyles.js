@@ -72,4 +72,8 @@ export const FlexWrap = styled.div`
 
 export const AbtWrapper = styled.div`
    width: 50%;
+
+   @media screen and (max-width: 790px) {
+      width: 100%;
+   }
 `;
