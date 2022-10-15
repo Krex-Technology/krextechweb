@@ -1,15 +1,17 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
-   margin: 3rem auto;
+export const AbtWrapper = styled.div`
+   margin: 5rem auto;
    display: flex;
    justify-content: space-between;
+   /* align-items: center; */
+   /* background: green; */
    color: ${({ theme }) => theme.colors.side};
+   height: 500px;
 
    .area {
       width: 46%;
       max-width: 500px;
-      height: 660px;
    }
 
    .blue {
@@ -23,7 +25,6 @@ export const Wrapper = styled.div`
       position: absolute;
       right: 0;
       width: 85%;
-      height: 630px;
 
       img {
          object-fit: cover;
@@ -46,31 +47,28 @@ export const Wrapper = styled.div`
       }
 
       h1 {
-         font-size: clamp(1rem, 3vw, 3rem);
+         font-size: clamp(1.1rem, 10vw, 1.6rem);
          margin-bottom: 1rem;
       }
 
       .years {
-         display: flex;
-         justify-content: space-between;
          width: 100%;
          padding: 1rem 2rem;
          border-radius: 10px;
          background: ${({ theme }) => theme.colors.side};
          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
          color: ${({ theme }) => theme.colors.white};
+         margin-bottom: 2rem;
 
          .exp {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            width: 80%;
+            width: 90%;
 
             h1 {
                font-size: clamp(1.1rem, 10vw, 1.6rem);
                color: ${({ theme }) => theme.colors.white};
-               /* color: #22628c;
-               color: #2cadf8; */
             }
 
             p {
@@ -84,13 +82,11 @@ export const Wrapper = styled.div`
       }
 
       .phone {
-         display: flex;
          width: 100%;
          padding: 2rem 3rem;
          border-radius: 10px;
          background: ${({ theme }) => theme.colors.side};
          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-         align-items: center;
 
          a {
             color: ${({ theme }) => theme.colors.white};
@@ -111,10 +107,6 @@ export const Wrapper = styled.div`
       display: block;
       padding: 0.5rem;
 
-      h2 {
-         margin-bottom: 2rem;
-      }
-
       h1,
       .div {
          margin-bottom: 0.5rem;
@@ -126,13 +118,13 @@ export const Wrapper = styled.div`
       }
 
       .years {
-         margin-bottom: 1.7rem;
+         margin-bottom: 1.5rem;
          width: 100%;
 
          .exp {
             width: 100%;
             .year {
-               width: 125%;
+               width: 105%;
                /* background: green; */
             }
          }

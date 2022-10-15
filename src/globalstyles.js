@@ -181,11 +181,6 @@ const GlobalStyles = createGlobalStyle`
         border-left: none;
       }
       
-      h2 {
-        margin: 1rem 1rem -.5rem 0;
-        font-size: 2rem;
-        color: #fff;
-      }
     }
     .end{
       background: ${({ theme }) => theme.colors.side};

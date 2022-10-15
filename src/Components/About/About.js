@@ -1,12 +1,12 @@
 import React from "react";
-import { Wrapper } from "./AboutStyles";
+import { AbtWrapper } from "./AboutStyles";
 import sample from "../../assets/images/sample.jpg";
 import SubAbout from "../SubAbout/SubAbout";
 
 const About = ({ abtref }) => {
    return (
       <>
-         <Wrapper ref={abtref}>
+         <AbtWrapper>
             <div className="about">
                <h2>About Us</h2>
                <h2>Service With Extensive Years Of Experience</h2>
@@ -32,14 +32,14 @@ const About = ({ abtref }) => {
                   </h2>
                </div>
             </div>
-            <div className="area">
+            {/* <div className="area">
                <div className="blue">
                   <div className="transform">
                      <img src={sample} alt="sample" />
                   </div>
                </div>
-            </div>
-         </Wrapper>
+            </div> */}
+         </AbtWrapper>
          <SubAbout />
       </>
    );
