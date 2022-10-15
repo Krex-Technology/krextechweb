@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const HomeWrapper = styled.div`
    width: 90%;
    max-width: 1470px;
    margin: auto;

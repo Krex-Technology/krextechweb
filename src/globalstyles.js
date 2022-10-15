@@ -23,7 +23,7 @@ const GlobalStyles = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     font-size: 1.4rem;
     font-weight: 400;
-    letter-spacing: 0.02rem;
+    /* letter-spacing: 0.02rem; */
     line-height: 2.5rem;
     background: #e1e7ed;
     background-attachment: fixed;
@@ -138,7 +138,7 @@ const GlobalStyles = createGlobalStyle`
       top: 2.2rem;
       left: 6rem;
       width: 90%;
-      max-width: 270px;
+      max-width: 250px;
       border-radius: 50px;
     
     h4, a{

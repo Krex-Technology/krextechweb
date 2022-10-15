@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-   margin: 4rem auto;
+   margin: 3rem auto;
    display: flex;
    justify-content: space-between;
    color: ${({ theme }) => theme.colors.side};
@@ -43,7 +43,6 @@ export const Wrapper = styled.div`
          width: 80px;
          height: 4px;
          background: #2cadf8;
-         /* background: ${({ theme }) => theme.colors.side}; */
       }
 
       h1 {

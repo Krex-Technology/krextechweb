@@ -32,7 +32,6 @@ export const Wrapper = styled.div`
 
    @media screen and (max-width: 790px) {
       width: 98%;
-      padding: 7rem 0px 3rem 55px;
 
       .sub {
          margin-left: 0.7rem;
