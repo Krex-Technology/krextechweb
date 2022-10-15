@@ -8,6 +8,7 @@ const Home = () => {
    return (
       <Wrapper>
          <h1>Denukan Network Limited.</h1>
+         <h2>integrating tech-centred solutions into everyday life.</h2>
          <div className="imgWrapper">
             <img src={dcb} alt="illustration for core tech" />
          </div>

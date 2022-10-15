@@ -19,7 +19,6 @@ export const Wrapper = styled.div`
       }
 
       h3 {
-         letter-spacing: 1px;
          font-weight: 400;
          line-height: 1.6;
       }

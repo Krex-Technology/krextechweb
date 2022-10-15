@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-   width: 100%;
-   padding: 6rem 7%;
+   width: 90%;
+   max-width: 1470px;
+   margin: auto;
+   padding: 7rem 0 0;
 
    h3 {
       text-align: center;
@@ -29,7 +31,8 @@ export const Wrapper = styled.div`
    }
 
    @media screen and (max-width: 790px) {
-      padding: 6rem 4%;
+      width: 98%;
+      padding: 7rem 0px 3rem 55px;
 
       .sub {
          margin-left: 0.7rem;
