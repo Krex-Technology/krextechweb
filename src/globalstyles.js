@@ -94,6 +94,9 @@ const GlobalStyles = createGlobalStyle`
      background: ${({ theme }) => theme.colors?.side};
      fill-opacity: 1;
      color: ${({ theme }) => theme.colors.white};
+     background: black;
+     fill-opacity: 1;
+     opacity: 0.7;
      width: 50px;
      height: 50px;
      border-radius: 50%;
@@ -129,6 +132,9 @@ const GlobalStyles = createGlobalStyle`
       background: ${({ theme }) => theme.colors?.side};
       fill-opacity: 1;
       color: ${({ theme }) => theme.colors.white};
+      background: black;
+     fill-opacity: 1;
+     opacity: 0.7;
       top: 2.2rem;
       left: 6rem;
       width: 90%;

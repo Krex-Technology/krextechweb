@@ -61,7 +61,7 @@ function App() {
                </div>
             ) : null}
          </div>
-         <div className="socials">
+         {/* <div className="socials">
             <Link>
                <p>FB</p>
             </Link>
@@ -71,8 +71,8 @@ function App() {
             <Link>
                <p>IG</p>
             </Link>
-            {/* <Link><p>FB</p></Link> */}
-         </div>
+            {/* <Link><p>FB</p></Link>
+         </div> */}
       </ThemeProvider>
    );
 }

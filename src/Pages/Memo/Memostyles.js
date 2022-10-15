@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
    width: 90%;
    max-width: 1470px;
    margin: auto;
-   padding: 7rem 0 0;
+   padding: 8rem 0 0 0;
 
    h3 {
       text-align: center;
