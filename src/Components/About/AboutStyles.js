@@ -28,16 +28,18 @@ export const FlexWrap = styled.div`
    }
    .years,
    .phone {
-      margin-bottom: 2rem
+      margin-bottom: 2rem;
    }
 
    li {
       list-style: none;
    }
-   
-   h3, p, li {
+
+   h3,
+   p,
+   li {
       font-size: clamp(1.3rem, 2vw, 1.5rem);
-      line-height: 1.8;
+      line-height: 1.9;
       font-weight: 400;
    }
    .div {
