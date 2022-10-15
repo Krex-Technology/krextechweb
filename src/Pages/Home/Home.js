@@ -1,6 +1,7 @@
 import React from "react";
 import { HomeWrapper } from "./HomeStyles";
-import dcb from "../../assets/images/dcb1.png";
+// import dcb from "../../assets/images/dcb1.png";
+import dcb from "../../assets/images/dcb11.png";
 // import dcb from "../../assets/images/sample.jpg";
 // import dcb from "../../assets/images/dcb.png";
 import About from "../../Components/About/About";
