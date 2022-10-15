@@ -7,8 +7,8 @@ const About = ({ abtref }) => {
       <>
          <AbtWrapper>
             <div className="about">
-               <h2>About Us</h2>
-               <h2>Service With Extensive Years Of Experience</h2>
+               <h1>About Us</h1>
+               <h1>Service With Extensive Years Of Experience</h1>
                <div className="div"></div>
                <p>
                   At Denukan Network Limited, We strive to integrate
@@ -26,9 +26,9 @@ const About = ({ abtref }) => {
                   </div>
                </div>
                <div className="phone">
-                  <h2 className="tel">
+                  <h1 className="tel">
                      <a href="tel:+2349030639862">+234 903 0639 862</a>
-                  </h2>
+                  </h1>
                </div>
             </div>
             {/* <div className="area">
