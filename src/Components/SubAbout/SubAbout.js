@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import { Wrapper } from "./SubAboutStyles";
-import Slider from "react-slick";
+// import { Wrapper } from "./SubAboutStyles";
+// import Slider from "react-slick";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -9,20 +9,19 @@ const SubAbout = () => {
       Aos.init({ duration: 1000 });
    }, []);
 
-   const settingsTwo = {
-      arrows: false,
-      infinite: true,
-      dot: false,
-      speed: 1000,
-      autoplay: true,
-      autoplaySpeed: 4000,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-   };
+   // const settingsTwo = {
+   //    arrows: false,
+   //    infinite: true,
+   //    dot: false,
+   //    speed: 1000,
+   //    autoplay: true,
+   //    autoplaySpeed: 4000,
+   //    slidesToShow: 1,
+   //    slidesToScroll: 1,
+   // };
 
    return (
-      <Wrapper>
-         <div className="abt">
+      <>
             <h1>Basic Company Information</h1>
             <h3>
                Denukan Network Limited is duly registered under the law of the
@@ -44,8 +43,7 @@ const SubAbout = () => {
                   <li>Asset Management</li>
                </ul>
             </h3>
-         </div>
-         <Slider {...settingsTwo} className="holdertwo">
+         {/* <Slider {...settingsTwo} className="holdertwo">
             <div data-aos="fade-left" className="div">
                <div className="img">
                   <h1>
@@ -116,8 +114,8 @@ const SubAbout = () => {
                   </h1>
                </div>
             </div>
-         </Slider>
-      </Wrapper>
+         </Slider> */}
+      </>
    );
 };
 

@@ -10,7 +10,7 @@ export const HomeWrapper = styled.div`
    h1 {
       font-size: clamp(3rem, 4vw, 35rem);
       color: ${({ theme }) => theme.colors?.side};
-      font-weight: 500;
+      font-weight: 600;
       margin-bottom:4rem;
     }
     
