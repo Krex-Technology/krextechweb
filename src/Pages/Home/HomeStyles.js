@@ -11,6 +11,7 @@ export const HomeWrapper = styled.div`
       display: flex;
       justify-content: space-between;
       align-items: center;
+      /* background: red; */
 
       .first-child {
          /* background: red; */
@@ -35,6 +36,7 @@ export const HomeWrapper = styled.div`
 
    .imgWrapper {
       width: 100%;
+      max-width: 590px;
       height: 600px;
       display: flex;
       justify-content: end;
