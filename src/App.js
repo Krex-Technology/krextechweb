@@ -6,6 +6,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import { RiMenuUnfoldFill } from "react-icons/ri";
 import Home from "./Pages/Home/Home";
 import Memo from "./Pages/Memo/Memo";
+import Events from "./Pages/Events/Events";
 
 const theme = {
    colors: {
@@ -36,6 +37,7 @@ function App() {
          <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/memo" element={<Memo />} />
+            <Route path="/events" element={<Events />} />
             {/*
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="*" element={<Page404 />} /> */}
