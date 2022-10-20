@@ -62,14 +62,7 @@ export const FlexWrap = styled.div`
       filter: brightness(40%);
       animation: zoom-in-zoom-out 3s ease infinite;
       overflow: hidden;
-      /* max-height: 500px; 
-
-      .square {
-         width: 200px;
-         height: 200px;
-         background: grey; */
-      /* transform: rotateY(45deg);
-      animation: rotateAnimation 1s linear infinite; */
+      max-height: 500px;
 
       img {
          width: 100%;
@@ -97,7 +90,7 @@ export const FlexWrap = styled.div`
       }
    }
 
-   /* @keyframes zoom-in-zoom-out {
+   @keyframes zoom-in-zoom-out {
       0% {
          transform: scale(0.91, 0.91);
       }
@@ -107,7 +100,7 @@ export const FlexWrap = styled.div`
       100% {
          transform: scale(0.91, 0.91);
       }
-   } */
+   }
 
    @keyframes rotateAnimation {
       from {
