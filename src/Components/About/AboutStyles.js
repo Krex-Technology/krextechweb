@@ -43,8 +43,12 @@ export const FlexWrap = styled.div`
    p,
    li {
       font-size: clamp(1.3rem, 2vw, 1.5rem);
-      line-height: 1.9;
       font-weight: 400;
+      line-height: 1.9;
+   }
+
+   li {
+      line-height: 2.9;
    }
    .div {
       width: 100px;
@@ -55,10 +59,17 @@ export const FlexWrap = styled.div`
    .cont {
       width: 50%;
       height: 100%;
-      filter: brightness(90%);
+      filter: brightness(40%);
       animation: zoom-in-zoom-out 3s ease infinite;
       overflow: hidden;
-      /* max-height: 500px; */
+      /* max-height: 500px; 
+
+      .square {
+         width: 200px;
+         height: 200px;
+         background: grey; */
+      /* transform: rotateY(45deg);
+      animation: rotateAnimation 1s linear infinite; */
 
       img {
          width: 100%;
@@ -86,7 +97,7 @@ export const FlexWrap = styled.div`
       }
    }
 
-   @keyframes zoom-in-zoom-out {
+   /* @keyframes zoom-in-zoom-out {
       0% {
          transform: scale(0.91, 0.91);
       }
@@ -95,6 +106,15 @@ export const FlexWrap = styled.div`
       }
       100% {
          transform: scale(0.91, 0.91);
+      }
+   } */
+
+   @keyframes rotateAnimation {
+      from {
+         transform: rotateY(45deg);
+      }
+      to {
+         transform: rotateY(225deg);
       }
    }
 `;
