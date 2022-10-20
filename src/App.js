@@ -73,6 +73,18 @@ function App() {
             </Link>
             {/* <Link><p>FB</p></Link>
          </div> */}
+         <div className="footer">
+            <h4>
+               Copyright &copy; 2022 Denukan Network Limited All Rights Reserved
+            </h4>
+            <p>
+               Joomla! is Free Software released under the GNU General Public
+               License. - The Joomla name and logo are used under a limited
+               license granted by Open Source Matters in the United States and
+               other countries. Web-eau.net is not affiliated with or endorsed
+               by the Joomla project or by Open Source Matters.
+            </p>
+         </div>
       </ThemeProvider>
    );
 }

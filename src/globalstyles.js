@@ -190,6 +190,28 @@ const GlobalStyles = createGlobalStyle`
       color: white;
     }
   }
+
+  .footer{
+    width: 100vw;
+    padding: 4rem 1rem;
+    text-align: center;
+    background:  ${({ theme }) => theme.colors.side};
+    color:  ${({ theme }) => theme.colors.white};
+    
+    h4{
+      width: 80%;
+      margin: 0 auto 1rem;
+      text-align: center;
+    }
+    
+    p{
+      width: 90%;
+      margin: auto;
+      text-align: center;
+    }
+
+
+  }
   
 `;
 
