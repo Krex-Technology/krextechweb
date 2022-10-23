@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/all": {
+      "name": "/all",
+      "lambdaFunction": "dkn562738f6",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

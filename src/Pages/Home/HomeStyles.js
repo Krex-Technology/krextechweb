@@ -16,8 +16,8 @@ export const HomeWrapper = styled.div`
       .first-child {
          /* background: red; */
          width: 100%;
-         h1{
-          line-height: 1;
+         h1 {
+            line-height: 1;
          }
       }
    }
@@ -28,35 +28,28 @@ export const HomeWrapper = styled.div`
       font-weight: 600;
       margin-bottom: 4rem;
    }
-   
+
    h2 {
-     font-size: clamp(1rem, 3vw, 2rem);
-     color: ${({ theme }) => theme.colors?.side};
-    }
-    
-    .imgWrapper {
-     /* filter: brightness(70%); */
+      font-size: clamp(1rem, 3vw, 2rem);
+      color: ${({ theme }) => theme.colors?.side};
+   }
+
+   .imgWrapper {
       width: 100%;
       max-width: 740px;
-      /* height: 640px; */
       display: flex;
       justify-content: end;
 
       img {
          width: 100%;
-         /* object-fit: cover; */
-         /* animation-name: spin;
-         animation-duration: 30000ms;
-         animation-iteration-count: infinite;
-         animation-timing-function: linear; */
       }
    }
 
    @media screen and (max-width: 790px) {
       width: 98%;
 
-      .top{
-        display:block;
+      .top {
+         display: block;
       }
 
       h1 {
@@ -65,7 +58,7 @@ export const HomeWrapper = styled.div`
       /* padding: 7rem 0px 3rem 55px; */
 
       .imgWrapper {
-        margin: auto;
+         margin: auto;
          width: 100%;
          text-align: center;
          img {

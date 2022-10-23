@@ -55,7 +55,7 @@ const Contact = () => {
                   height={100}
                   className="iframe"
                   id="gmap_canvas"
-                  src="https://maps.google.com/maps?q=4,%20iya%20omolere%20street&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                  src="https://maps.google.com/maps?q=Iya%20Omolere%20st,%20denukan%20network%20limited%20head%20office&t=&z=17&ie=UTF8&iwloc=&output=embed"
                   frameborder="0"
                   scrolling="no"
                   marginheight="0"
