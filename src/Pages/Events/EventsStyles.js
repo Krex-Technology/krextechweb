@@ -51,7 +51,8 @@ export const EventsWrapper = styled.div`
          justify-content: center;
          gap: 5px;
          width: 100vw;
-         height: 60vmin;
+         height: 400px;
+         /* height: 60vmin; */
       }
       img {
          flex: 1;
