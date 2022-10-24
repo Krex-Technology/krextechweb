@@ -37,7 +37,7 @@ const Events = () => {
    return (
       <EventsWrapper>
          <div id="timer"></div>
-         <h1 className="info-">TO OUR SPECIAL TEAM BONDING EXERCISE!</h1>
+         <h3 className="info-">TO OUR SPECIAL TEAM BONDING EXERCISE!</h3>
          <br />
          <hr />
          {catevents.map((item, index) => {

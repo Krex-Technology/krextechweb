@@ -51,7 +51,7 @@ export const EventsWrapper = styled.div`
          justify-content: center;
          gap: 5px;
          width: 100vw;
-         height: 55vmin;
+         height: 60vmin;
       }
       img {
          flex: 1;
@@ -70,7 +70,7 @@ export const EventsWrapper = styled.div`
    @media screen and (max-width: 790px) {
       width: 98%;
 
-      h1 {
+      h3 {
          margin-bottom: 1rem;
          line-height: 1.3;
       }
