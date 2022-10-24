@@ -1,4 +1,6 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
+import { catevents } from "./eventsdata";
 import { EventsWrapper } from "./EventsStyles";
 
 setInterval(function updateTimer() {
@@ -38,24 +40,22 @@ const Events = () => {
          <h1 className="info-">TO OUR SPECIAL TEAM BONDING EXERCISE!</h1>
          <br />
          <hr />
-         <br />
-         <br />
-         <br />
-         <br />
-         <br />
-         <br />
-         <br />
-         <br />
-         <br />
-         <br />
-         <br />
-         <br />
-         <br />
-         <br />
-         <br />
-         <br />
-         <br />
-         <br />
+         {catevents.map((item, index) => {
+            return (
+               <div>
+                  <h1>{item.text}</h1>
+                  <div className="gridwrapper" key={index}>
+                     <div class="container">
+                        <img src={item.image1} />
+                        <img src={item.image2} />
+                        <img src={item.image3} />
+                        <img src={item.image4} />
+                        <img src={item.image5} />
+                     </div>
+                  </div>
+               </div>
+            );
+         })}
          <br />
       </EventsWrapper>
    );

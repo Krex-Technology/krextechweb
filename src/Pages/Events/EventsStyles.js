@@ -27,9 +27,43 @@ export const EventsWrapper = styled.div`
       }
    }
 
+   h1{
+      margin: 1rem auto;
+      text-align: center;
+      text-transform: capitalize;
+   }
+
    .info- {
       text-align: center;
       font-weight: 100;
+   }
+
+   .gridwrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      .container {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 5px;
+         width: 100vw;
+         height: 45vmin;
+      }
+      img {
+         flex: 1;
+         height: 100%;
+         object-fit: cover;
+         overflow: hidden;
+         filter: grayscale(100%) brightness(75%);
+         transition: all 0.5s;
+      }
+      img:hover {
+         flex: 8;
+         filter: grayscale(0%) brightness(115%);
+      }
    }
 
    @media screen and (max-width: 790px) {
@@ -37,6 +71,7 @@ export const EventsWrapper = styled.div`
 
       h1 {
          margin-bottom: 1rem;
+         line-height: 1.3;
       }
    }
 `;
