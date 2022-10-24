@@ -27,7 +27,7 @@ export const EventsWrapper = styled.div`
       }
    }
 
-   p{
+   p {
       margin: 1rem auto;
       text-align: center;
       text-transform: capitalize;
@@ -51,7 +51,7 @@ export const EventsWrapper = styled.div`
          justify-content: center;
          gap: 5px;
          width: 100vw;
-         height: 45vmin;
+         height: 55vmin;
       }
       img {
          flex: 1;
