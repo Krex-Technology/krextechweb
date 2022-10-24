@@ -27,10 +27,11 @@ export const EventsWrapper = styled.div`
       }
    }
 
-   h1{
+   p{
       margin: 1rem auto;
       text-align: center;
       text-transform: capitalize;
+      font-weight: 500;
    }
 
    .info- {
