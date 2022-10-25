@@ -14,6 +14,15 @@ export const catevents = [
       image6: photo1,
    },
    {
+      text: "event name",
+      image1: photo3,
+      image2: photo2,
+      image3: photo4,
+      image4: photo1,
+      image5: photo3,
+      image6: photo1,
+   },
+   {
       text: "Internet Service Provider and Telecommunications, Media & Entertainment Consultant",
       image1: photo4,
       image2: photo1,

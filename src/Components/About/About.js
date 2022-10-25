@@ -15,7 +15,7 @@ const About = ({ abtref }) => {
             <p>
                At Denukan Network Limited, We strive to integrate tech-centred
                solutions into everyday life hereby making this planet a better
-               place to live.Please do well to reach out to us
+               place to live. Please do well to reach out to us.
             </p>
             <div className="years">
                <h1>10+ Years Experience</h1>

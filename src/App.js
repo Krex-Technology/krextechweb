@@ -38,9 +38,6 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/memo" element={<Memo />} />
             <Route path="/events" element={<Events />} />
-            {/*
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="*" element={<Page404 />} /> */}
          </Routes>
          <div className="navv">
             {" "}
@@ -63,28 +60,13 @@ function App() {
                </div>
             ) : null}
          </div>
-         {/* <div className="socials">
-            <Link>
-               <p>FB</p>
-            </Link>
-            <Link>
-               <p>TW</p>
-            </Link>
-            <Link>
-               <p>IG</p>
-            </Link>
-            {/* <Link><p>FB</p></Link>
-         </div> */}
          <div className="footer">
             <h4>
                Copyright &copy; 2022 Denukan Network Limited All Rights Reserved
             </h4>
             <p>
-               Joomla! is Free Software released under the GNU General Public
-               License. - The Joomla name and logo are used under a limited
-               license granted by Open Source Matters in the United States and
-               other countries. Web-eau.net is not affiliated with or endorsed
-               by the Joomla project or by Open Source Matters.
+               Denukan Network Limited is duly registered under the law of the
+               Federal Republic of Nigeria.
             </p>
          </div>
       </ThemeProvider>
