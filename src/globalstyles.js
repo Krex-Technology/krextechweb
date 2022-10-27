@@ -23,7 +23,6 @@ const GlobalStyles = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     font-size: 1.4rem;
     font-weight: 400;
-    /* letter-spacing: 0.02rem; */
     line-height: 2.5rem;
     background: #e1e7ed;
     background: #fafafc;

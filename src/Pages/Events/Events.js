@@ -4,7 +4,7 @@ import { catevents } from "./eventsdata";
 import { EventsWrapper } from "./EventsStyles";
 
 setInterval(function updateTimer() {
-   let future = Date.parse("October 29, 2022 10:00:00");
+   let future = Date.parse("October 29, 2022 12:00:00");
    let now = new Date();
    let diff = future - now;
 
