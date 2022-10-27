@@ -211,7 +211,6 @@ const GlobalStyles = createGlobalStyle`
     fill-opacity: 1;
     opacity: 0.7;
     z-index: 888;
-    /* color: white; */
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
     h1{
