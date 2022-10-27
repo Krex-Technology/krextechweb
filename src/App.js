@@ -68,7 +68,9 @@ function App() {
          </div>
 
          <div className={isScrolled ? "navBar scrolling" : "navBar"}>
-            <h1>Denukan</h1>
+            <h1>
+               <Link to="/">Denukan</Link>
+            </h1>
             <div className="links">
                <h4>
                   <Link to="/">Home</Link>
