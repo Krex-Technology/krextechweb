@@ -26,9 +26,15 @@ const theme = {
 
 function App() {
    const [display, setDisplay] = useState(true);
+   const [isScrolled, setIsScrolled] = useState(false);
 
    const toggledisplay = () => {
       setDisplay(!display);
+   };
+
+   window.onscroll = () => {
+      setIsScrolled(window.pageYOffset === 0 ? false : true);
+      return () => (window.onscroll = null);
    };
 
    return (
@@ -60,6 +66,23 @@ function App() {
                </div>
             ) : null}
          </div>
+
+         <div className={isScrolled ? "navBar scrolling" : "navBar"}>
+            <h1>Denukan</h1>
+            <div className="links">
+               <h4>
+                  <Link to="/">Home</Link>
+               </h4>
+               <h4>
+                  <Link to="/memo">Memo</Link>
+               </h4>
+               <h4>
+                  <Link to="/events">Events</Link>
+               </h4>
+            </div>
+            <button>Contact Us</button>
+         </div>
+
          <div className="footer">
             <h4>
                Copyright &copy; 2022 Denukan Network Limited All Rights Reserved
