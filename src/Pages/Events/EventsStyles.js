@@ -14,6 +14,10 @@ export const EventsWrapper = styled.div`
       font-weight: 100;
       text-shadow: 0 0 1px #48c8ff;
 
+      @media screen and (max-width: 790px) {
+         font-size: 2em;
+      }
+
       div {
          display: inline-block;
          min-width: 90px;
