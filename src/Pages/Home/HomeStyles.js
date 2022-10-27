@@ -11,10 +11,8 @@ export const HomeWrapper = styled.div`
       display: flex;
       justify-content: space-between;
       align-items: center;
-      /* background: red; */
 
       .first-child {
-         /* background: red; */
          width: 100%;
          h1 {
             line-height: 1.25;

@@ -208,11 +208,17 @@ const GlobalStyles = createGlobalStyle`
 
   .scrolling{
     background: black;
-     fill-opacity: 1;
-     opacity: 0.7;
+    fill-opacity: 1;
+    opacity: 0.7;
     z-index: 888;
-    color: white;
+    /* color: white; */
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    h1{
+      a{
+          color: ${({ theme }) => theme.colors.white};
+        }
+    }
 
     .links{
       h4{
