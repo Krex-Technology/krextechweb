@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const EventsWrapper = styled.div`
    width: 90%;
    max-width: 1470px;
-   margin: auto;
+   margin: 4rem auto;
    padding: 8rem 0 0 0;
    position: relative;
 

@@ -56,10 +56,10 @@ const Contact = () => {
                   className="iframe"
                   id="gmap_canvas"
                   src="https://maps.google.com/maps?q=Iya%20Omolere%20st,%20denukan%20network%20limited%20head%20office&t=&z=17&ie=UTF8&iwloc=&output=embed"
-                  frameborder="0"
+                  frameBorder="0"
                   scrolling="no"
-                  marginheight="0"
-                  marginwidth="0"
+                  marginHeight="0"
+                  marginWidth="0"
                ></iframe>
             </div>
             <div className="form">
@@ -102,7 +102,7 @@ const Contact = () => {
                      className="form-control"
                      placeholder="YOUR MESSAGE"
                      required=""
-                     defaultValue={""}
+                     // defaultValue={""}
                      cols={65}
                      rows={5}
                   />

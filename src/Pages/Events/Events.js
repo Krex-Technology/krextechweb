@@ -42,10 +42,10 @@ const Events = () => {
          <hr />
          {catevents.map((item, index) => {
             return (
-               <div>
+               <div key={index}>
                   <p>{item.text}</p>
                   <div className="gridwrapper" key={index}>
-                     <div class="container">
+                     <div className="container">
                         <img src={item.image1} />
                         <img src={item.image2} />
                         <img src={item.image3} />
