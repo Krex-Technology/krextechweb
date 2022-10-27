@@ -175,8 +175,6 @@ const GlobalStyles = createGlobalStyle`
       margin: auto;
       text-align: center;
     }
-
-
   }
 
   .navBar{
