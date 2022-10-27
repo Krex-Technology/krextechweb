@@ -17,7 +17,7 @@ export const HomeWrapper = styled.div`
          /* background: red; */
          width: 100%;
          h1 {
-            line-height: 1;
+            line-height: 1.25;
          }
       }
    }
