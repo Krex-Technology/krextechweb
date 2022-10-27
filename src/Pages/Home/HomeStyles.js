@@ -47,6 +47,7 @@ export const HomeWrapper = styled.div`
 
    @media screen and (max-width: 790px) {
       width: 98%;
+      margin: auto;
 
       .top {
          display: block;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const EventsWrapper = styled.div`
    width: 90%;
    max-width: 1470px;
-   margin: 4rem auto;
+   margin: 3rem auto;
    padding: 8rem 0 0 0;
    position: relative;
 
@@ -74,6 +74,7 @@ export const EventsWrapper = styled.div`
 
    @media screen and (max-width: 790px) {
       width: 98%;
+      margin: 1rem auto;
 
       h3 {
          margin-bottom: 1rem;
