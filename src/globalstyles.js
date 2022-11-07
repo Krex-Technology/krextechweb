@@ -187,7 +187,7 @@ const GlobalStyles = createGlobalStyle`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 4rem;
+    padding: 1.5rem 4rem;
     margin: auto;
     color: ${({ theme }) => theme.colors.side};
     position: fixed;
