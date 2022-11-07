@@ -105,6 +105,7 @@ const GlobalStyles = createGlobalStyle`
      align-items: center;
      position: fixed;
      top: 2rem;
+     z-index: 99;
 
      @media screen and (max-width: 790px){
       display: flex;
@@ -139,21 +140,25 @@ const GlobalStyles = createGlobalStyle`
       background: black;
      fill-opacity: 1;
      opacity: 0.7;
-      top: 2.2rem;
-      left: 6rem;
-      width: 90%;
-      max-width: 250px;
-      border-radius: 50px;
+      top: 0rem;
+      left: 0rem;
+      width: 100%;
+      height: 100vh;
+      text-align: center;
+      padding: 10vh 0;
+      /* max-width: 250px; */
+      /* border-radius: 50px; */
     
     h4, a{
        display: inline;
        margin: 1rem;
-       font-weight: 400;
+       font-weight: 500;
        color: ${({ theme }) => theme.colors.white};
     }
 
     @media screen and (max-width: 790px){
       display: flex;
+      flex-direction: column;
      }
    }
 
@@ -188,14 +193,18 @@ const GlobalStyles = createGlobalStyle`
     position: fixed;
     top: 0;
 
+    h1,p{
+      margin: 0;
+    }
+
     .links{
       display: flex;
       justify-content: space-around;
       width: 100%;
-      max-width: 500px;
+      max-width: 700px;
       
       h4{
-        a{
+        a,p{
           color: ${({ theme }) => theme.colors.side};
         }
       }
@@ -213,15 +222,22 @@ const GlobalStyles = createGlobalStyle`
     z-index: 888;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
-    h1{
+    span{
+      p, h1{
+        color: ${({ theme }) => theme.colors.white};
+      }
+    }
+
+    h1,p{
       a{
           color: ${({ theme }) => theme.colors.white};
         }
     }
 
     .links{
-      h4{
-        a{
+      color: ${({ theme }) => theme.colors.white};
+      h4,p{
+        a,p{
           color: ${({ theme }) => theme.colors.white};
         }
       }

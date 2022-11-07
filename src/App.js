@@ -7,6 +7,10 @@ import { RiMenuUnfoldFill } from "react-icons/ri";
 import Home from "./Pages/Home/Home";
 import Memo from "./Pages/Memo/Memo";
 import Events from "./Pages/Events/Events";
+import About from "./Pages/About/About";
+import People from "./Pages/People/People";
+import Solutions from "./Pages/Solutions/Solutions";
+import ContactUS from "./Pages/Contact/Contact";
 
 const theme = {
    colors: {
@@ -44,6 +48,10 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/memo" element={<Memo />} />
             <Route path="/events" element={<Events />} />
+            <Route path="/contact_us" element={<ContactUS />} />
+            <Route path="/about_us" element={<About />} />
+            <Route path="/our_people" element={<People />} />
+            <Route path="/our_solutions" element={<Solutions />} />
          </Routes>
          <div className="navv">
             {" "}
@@ -53,7 +61,10 @@ function App() {
                </h1>
             </div>
             {!display ? (
-               <div className="navcontents animate__animated animate__rubberBand">
+               <div
+                  className="navcontents animate__animated animate__rubberBand"
+                  onClick={toggledisplay}
+               >
                   <h4>
                      <Link to="/">Home</Link>
                   </h4>
@@ -63,14 +74,29 @@ function App() {
                   <h4>
                      <Link to="/events">Events</Link>
                   </h4>
+                  <h4>
+                     <Link to="/about_us">About us</Link>
+                  </h4>
+                  <h4>
+                     <Link to="/contact_us">Contact us</Link>
+                  </h4>
+                  <h4>
+                     <Link to="/our_solutions">Our solutions</Link>
+                  </h4>
+                  <h4>
+                     <Link to="/our_people">Our people</Link>
+                  </h4>
                </div>
             ) : null}
          </div>
 
          <div className={isScrolled ? "navBar scrolling" : "navBar"}>
-            <h1>
-               <Link to="/">Denukan</Link>
-            </h1>
+            <span>
+               <Link to="/">
+                  <h1>Denukan</h1>
+                  <p>NETWORK LIMITED</p>
+               </Link>
+            </span>
             <div className="links">
                <h4>
                   <Link to="/">Home</Link>
@@ -81,8 +107,19 @@ function App() {
                <h4>
                   <Link to="/events">Events</Link>
                </h4>
+               <h4>
+                  <Link to="/about_us">About us</Link>
+               </h4>
+               <h4>
+                  <Link to="/contact_us">Contact us</Link>
+               </h4>
+               <h4>
+                  <Link to="/our_solutions">Our solutions</Link>
+               </h4>
+               <h4>
+                  <Link to="/our_people">Our people</Link>
+               </h4>
             </div>
-            <button>Contact Us</button>
          </div>
 
          <div className="footer">
