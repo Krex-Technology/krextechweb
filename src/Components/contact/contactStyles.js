@@ -60,32 +60,37 @@ margin: 12rem auto 6rem;
 
 
     @media screen and (max-width: 900px) {
-        display: block;
-        margin: 0;
-        padding: 1rem;
-        height: auto;
-        background: transparent;
-        padding: 0;
-
-        .mapwrapper{
-          width:100%;
-          height: 400px;
-          border-radius:0;
-          padding: 0.5rem;
-          
-          .iframe{
-            border-radius:0;
-          }
-        }
+      display: block;
+      margin: 0;
+      width: 100%;
+      padding: 1rem;
+      height: auto;
+      background: transparent;
+      padding: 0;
+      
+      .mapwrapper{
+        width:100%;
+        height: 400px;
+        border-radius:0;
+        padding: 0.5rem;
         
-        .form{
+        .iframe{
           border-radius:0;
-          width: 100%;
-          padding: 0.5rem;
-          /* background: white; */
         }
-     }
-  }
+      }
+      
+      .form{
+        border-radius:0;
+        width: 100%;
+        padding: 0.5rem;
+        /* background: white; */
+      }
+    }
 
+  }
+  
+  @media screen and (max-width: 799px) {
+    margin: 7rem auto 6rem;
+  }
 
 `;
