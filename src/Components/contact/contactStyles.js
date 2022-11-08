@@ -91,6 +91,7 @@ margin: 12rem auto 6rem;
   
   @media screen and (max-width: 799px) {
     margin: 7rem auto 6rem;
+    width:100%;
   }
 
 `;
