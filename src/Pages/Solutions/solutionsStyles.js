@@ -14,9 +14,10 @@ export const SolutionWrapper = styled.div`
    }
 
    .sol {
-      width: 80%;
+      width: 90%;
       max-width: 750px;
       line-height: 2.1;
+      font-weight: 400;
    }
 
    .solutionsWrapper {
