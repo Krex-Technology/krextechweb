@@ -32,18 +32,23 @@ export const SolutionWrapper = styled.div`
          grid-template-columns: repeat(1, 1fr);
       }
 
-      .solutionWrapper{
-        width: 100%;
-        background: #eeeeee;
-        padding: 2rem 3rem;
-        border-radius: 5px;
+      .solutionWrapper {
+         width: 100%;
+         background: #eeeeee;
+         padding: 2rem 3rem;
+         border-radius: 5px;
       }
 
-      .solutionWrapper:hover{
-        background: ${({ theme }) => theme.colors?.side};
-        color: ${({ theme }) => theme.colors?.white};
-        transform: scale(1.05);
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      .solutionWrapper:hover {
+         background: ${({ theme }) => theme.colors?.side};
+         color: ${({ theme }) => theme.colors?.white};
+         transform: scale(1.05);
+         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       }
+   }
+
+   @media screen and (max-width: 790px) {
+      padding: 0;
+      width: 100%;
    }
 `;
