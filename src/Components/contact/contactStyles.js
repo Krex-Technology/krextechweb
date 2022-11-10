@@ -83,7 +83,6 @@ margin: 12rem auto 6rem;
         border-radius:0;
         width: 100%;
         padding: 0.5rem;
-        /* background: white; */
       }
     }
 

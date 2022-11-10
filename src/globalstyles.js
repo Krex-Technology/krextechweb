@@ -184,14 +184,19 @@ const GlobalStyles = createGlobalStyle`
 
   .navBar{
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 4rem;
-    margin: auto;
-    color: ${({ theme }) => theme.colors.side};
     position: fixed;
     top: 0;
+
+    .width{      
+    margin: auto;    
+    color: ${({ theme }) => theme.colors.side};
+    width: 90%;
+    padding: 1.5rem 0rem;
+    display: flex;    
+    max-width: 1470px;
+    justify-content: space-between;
+    }
+
 
     h1,p{
       margin: 0;

@@ -74,9 +74,9 @@ function App() {
                   <h4>
                      <Link to="/events">Events</Link>
                   </h4>
-                  <h4>
+                  {/* <h4>
                      <Link to="/about_us">About us</Link>
-                  </h4>
+                  </h4> */}
                   <h4>
                      <Link to="/contact_us">Contact us</Link>
                   </h4>
@@ -91,34 +91,36 @@ function App() {
          </div>
 
          <div className={isScrolled ? "navBar scrolling" : "navBar"}>
-            <span>
-               <Link to="/">
-                  <h1>Denukan</h1>
-                  <p>NETWORK LIMITED</p>
-               </Link>
-            </span>
-            <div className="links">
-               <h4>
-                  <Link to="/">Home</Link>
-               </h4>
-               <h4>
-                  <Link to="/memo">Memo</Link>
-               </h4>
-               <h4>
-                  <Link to="/events">Events</Link>
-               </h4>
-               <h4>
-                  <Link to="/about_us">About us</Link>
-               </h4>
-               <h4>
-                  <Link to="/contact_us">Contact us</Link>
-               </h4>
-               <h4>
-                  <Link to="/our_solutions">Our solutions</Link>
-               </h4>
-               <h4>
-                  <Link to="/our_people">Our people</Link>
-               </h4>
+            <div className="width">
+               <span>
+                  <Link to="/">
+                     <h1>Denukan</h1>
+                     <p>NETWORK LIMITED</p>
+                  </Link>
+               </span>
+               <div className="links">
+                  <h4>
+                     <Link to="/">Home</Link>
+                  </h4>
+                  <h4>
+                     <Link to="/memo">Memo</Link>
+                  </h4>
+                  <h4>
+                     <Link to="/events">Events</Link>
+                  </h4>
+                  {/* <h4>
+                     <Link to="/about_us">About us</Link>
+                  </h4> */}
+                  <h4>
+                     <Link to="/contact_us">Contact us</Link>
+                  </h4>
+                  <h4>
+                     <Link to="/our_solutions">Our solutions</Link>
+                  </h4>
+                  <h4>
+                     <Link to="/our_people">Our people</Link>
+                  </h4>
+               </div>
             </div>
          </div>
 
