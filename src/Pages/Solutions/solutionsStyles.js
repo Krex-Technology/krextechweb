@@ -48,7 +48,7 @@ export const SolutionWrapper = styled.div`
    }
 
    @media screen and (max-width: 790px) {
-      padding: 0;
-      width: 100%;
+      padding: 4rem 0;
+      width: 97%;
    }
 `;
