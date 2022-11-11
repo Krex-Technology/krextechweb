@@ -7,7 +7,7 @@ const Offer = ({ srcref }) => {
       <Wrapper className="offer" ref={srcref}>
          <br />
          <h3>
-            BriIliant Technology Solutions and Exeptional Financial Consultancy
+            BriIliant Technology Solutions and Exceptional Financial Consultancy
          </h3>
          <br />
          <br />

@@ -13,15 +13,15 @@ const About = ({ abtref }) => {
             <h1>Service With Extensive Years Of Experience</h1>
             <div className="div"></div>
             <p>
-               At Denukan Network Limited, We strive to integrate tech-centred
+               At Denukan Network Limited, We strive to integrate tech-centered
                solutions into everyday life hereby making this planet a better
                place to live. Please do well to reach out to us.
             </p>
             <div className="years">
                <h1>10+ Years Experience</h1>
                <p className="year">
-                  We have over 10 Years experience in the tech space ranging
-                  from tech installation to financial services.
+                  We have over 10 years experience in the tech space ranging
+                  from tech installations to financial services.
                </p>
             </div>
             <div className="phone">

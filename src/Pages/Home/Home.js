@@ -10,7 +10,7 @@ const Home = () => {
          <div className="top">
             <div className="first-child">
                <h1>Denukan Network Limited.</h1>
-               <h2>integrating tech-centred solutions into everyday life.</h2>
+               <h2>Integrating tech-centered solutions into everyday life.</h2>
             </div>
             <div className="imgWrapper">
                <img src={dcb} alt="illustration for core tech" />

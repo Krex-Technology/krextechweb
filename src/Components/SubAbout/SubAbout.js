@@ -14,19 +14,22 @@ const SubAbout = () => {
             Denukan Network Limited is duly registered under the law of the
             Federal Republic of Nigeria. The Company is organized principally to
             provide quality services to its various customers in the areas of
-            Technology and Financial Consultancy
+            Technology and Financial Consultancy.
             <br />
-            some of our sevices include:
+            Some of our sevices include:
          </h3>
          <h3>
             <ul>
-               <li>Internet Services Provider</li>
-               <li>Cord Banking Software Application Provider</li>
+               <li>Internet Service Provider</li>
+               <li>Core Banking Software Application Provider</li>
                <li>Consultancy and Advisory Services to MFI and MFB</li>
                <li>Telecommunications, Media and Entertainment Consultant</li>
-               <li>Sales of Access Control and Installation Of CCTV</li>
+               <li>Sales of Access Control and Installation Of CCTV Cameras</li>
                <li>Sales and Installation Of ATM</li>
-               <li>Sales and Service of Inverter, solar panels and battery</li>
+               <li>
+                  Sales and Service of Inverters, Inverter batteries and solar
+                  panels{" "}
+               </li>
                <li>Asset Management</li>
             </ul>
          </h3>
