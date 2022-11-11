@@ -194,6 +194,7 @@ const GlobalStyles = createGlobalStyle`
     padding: 1.5rem 0rem;
     display: flex;    
     max-width: 1470px;
+    align-items: center;
     justify-content: space-between;
     }
 
