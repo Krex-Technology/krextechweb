@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useReducer } from "react";
 import Slider from "react-slick";
 import axios from "axios";
 import Loading from "../Loading/Loading";
@@ -7,28 +7,56 @@ import {
    BsFillArrowLeftCircleFill,
    BsFillArrowRightCircleFill,
 } from "react-icons/bs";
+import { Link } from "react-router-dom";
+
+const INITIAL_STATE = {
+   loading: false,
+   news: [],
+   error: false,
+};
+
+const newsReducer = (state, action) => {
+   switch (action.type) {
+      case "FETCH_NEWS_START":
+         return {
+            loading: true,
+            news: [],
+            error: false,
+         };
+      case "FETCH_NEWS_SUCCESS":
+         return {
+            error: false,
+            loading: false,
+            news: action.payload,
+         };
+      case "FETCH_NEWS_ERROR":
+         return { error: true, loading: false, news: [] };
+      default:
+         return state;
+   }
+};
 
 const BlogSlider = () => {
-   const [news, setNews] = useState([]);
+   const [state, dispatch] = useReducer(newsReducer, INITIAL_STATE);
 
    useEffect(() => {
       const cancelToken = axios.CancelToken.source();
+      dispatch({ type: "FETCH_NEWS_START" });
       const options = {
          method: "GET",
          url: "https://jsonplaceholder.typicode.com/users",
       };
-
       axios
          .request(options, cancelToken)
          .then(function (response) {
             console.log(response.data);
-            setNews(response.data);
+            dispatch({ type: "FETCH_NEWS_SUCCESS", payload: response.data });
          })
          .catch(function (error) {
             if (axios.isCancel(error)) {
-               console.error("request cancelled");
+               console.log("you canceled the request");
             } else {
-               console.log(error.message);
+               dispatch({ type: "FETCH_NEWS_ERROR" });
             }
          });
 
@@ -36,6 +64,7 @@ const BlogSlider = () => {
          cancelToken.cancel();
       };
    }, []);
+
    function SampleNextArrow(props) {
       const { className, style, onClick } = props;
       return (
@@ -121,19 +150,21 @@ const BlogSlider = () => {
       <>
          <h2> NEWS BLOG </h2>
          <BlogWrapper>
-            {news.length ? (
+            {state.loading && <Loading />}
+            {state.news.length && (
                <Slider {...settings}>
-                  {news.map((item, index) => {
+                  {state.news.map((item, index) => {
                      return (
-                        <div key={index} className="wrapp">
-                           <h4>{item.name}</h4>
-                        </div>
+                        <Link to={`news/${item.id}`} key={index}>
+                           <div className="wrapp">
+                              <h4>{item.name}</h4>
+                           </div>
+                        </Link>
                      );
                   })}
                </Slider>
-            ) : (
-               <Loading />
             )}
+            {state.error && <h1>error FETCH_NEWS_ERROR</h1>}
          </BlogWrapper>
       </>
    );

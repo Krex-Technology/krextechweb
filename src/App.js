@@ -11,6 +11,7 @@ import About from "./Pages/About/About";
 import People from "./Pages/People/People";
 import Solutions from "./Pages/Solutions/Solutions";
 import ContactUS from "./Pages/Contact/Contact";
+import News from "./Pages/News/News";
 
 const theme = {
    colors: {
@@ -52,6 +53,7 @@ function App() {
             <Route path="/about_us" element={<About />} />
             <Route path="/our_people" element={<People />} />
             <Route path="/our_solutions" element={<Solutions />} />
+            <Route path="/news/:id" element={<News />} />
          </Routes>
          <div className="navv">
             {" "}
