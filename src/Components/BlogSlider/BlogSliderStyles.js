@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const BlogWrapper = styled.div`
    width: 96%;
    margin: auto;
-   margin-bottom: 30px;
+   margin-bottom: 40px;
 
    .wrapp {
       height: 450px;
