@@ -28,7 +28,7 @@ export const HomeWrapper = styled.div`
    }
 
    h2 {
-      font-size: clamp(1rem, 3vw, 2rem);
+      font-size: clamp(1.17rem, 3vw, 2rem);
       color: ${({ theme }) => theme.colors?.side};
    }
 
