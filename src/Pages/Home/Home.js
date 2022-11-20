@@ -4,6 +4,7 @@ import About from "../../Components/About/About";
 import Offer from "../../Components/Offer/Offer";
 import BlogSlider from "../../Components/BlogSlider/BlogSlider";
 
+
 const Home = () => {
    return (
       <HomeWrapper>

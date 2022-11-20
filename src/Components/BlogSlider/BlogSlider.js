@@ -9,28 +9,34 @@ import {
 } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
+const BASE_URL = "https://d-news-api.herokuapp.com";
+
 const INITIAL_STATE = {
    loading: false,
    news: [],
-   error: false,
+   error: "",
 };
+
+const FETCH_NEWS_START = "FETCH_NEWS_START";
+const FETCH_NEWS_SUCCESS = "FETCH_NEWS_SUCCESS";
+const FETCH_NEWS_ERROR = "FETCH_NEWS_ERROR";
 
 const newsReducer = (state, action) => {
    switch (action.type) {
-      case "FETCH_NEWS_START":
+      case FETCH_NEWS_START:
          return {
             loading: true,
             news: [],
-            error: false,
+            error: "",
          };
-      case "FETCH_NEWS_SUCCESS":
+      case FETCH_NEWS_SUCCESS:
          return {
-            error: false,
+            error: "",
             loading: false,
             news: action.payload,
          };
-      case "FETCH_NEWS_ERROR":
-         return { error: true, loading: false, news: [] };
+      case FETCH_NEWS_ERROR:
+         return { error: action.payload, loading: false, news: [] };
       default:
          return state;
    }
@@ -44,19 +50,23 @@ const BlogSlider = () => {
       dispatch({ type: "FETCH_NEWS_START" });
       const options = {
          method: "GET",
-         url: "https://jsonplaceholder.typicode.com/users",
+         url: `${BASE_URL}/news/newsArticle`,
       };
       axios
          .request(options, cancelToken)
          .then(function (response) {
-            console.log(response.data);
-            dispatch({ type: "FETCH_NEWS_SUCCESS", payload: response.data });
+            console.log(response);
+            dispatch({
+               type: "FETCH_NEWS_SUCCESS",
+               payload: response.data?.news,
+            });
          })
          .catch(function (error) {
             if (axios.isCancel(error)) {
                console.log("you canceled the request");
             } else {
-               dispatch({ type: "FETCH_NEWS_ERROR" });
+               dispatch({ type: "FETCH_NEWS_ERROR", payload: error.message });
+               console.log(error);
             }
          });
 
@@ -155,16 +165,59 @@ const BlogSlider = () => {
                <Slider {...settings}>
                   {state.news.map((item, index) => {
                      return (
-                        <Link to={`news/${item.id}`} key={index}>
-                           <div className="wrapp">
-                              <h4>{item.name}</h4>
+                        <Link to={`news/${item._id}`} key={index}>
+                           <div className="card">
+                              <div className="image-wrapper">
+                                 <img src={item.imageUrl} alt={item.title} />
+                              </div>
+                              <div className="text-box-wrapper">
+                                 <div className="text-box">
+                                    <span>{item.date.slice(0, 10)}</span>
+                                    <h3 className="heading">{item.title}</h3>
+                                    <p
+                                       dangerouslySetInnerHTML={{
+                                          __html: item.details.substring(
+                                             0,
+                                             145
+                                          ),
+                                       }}
+                                    />
+                                 </div>
+                                 <div className="button-wrapper">Read More</div>
+                              </div>
+                           </div>
+                        </Link>
+                     );
+                  })}
+                  {state.news.map((item, index) => {
+                     return (
+                        <Link to={`news/${item._id}`} key={index}>
+                           <div className="card">
+                              <div className="image-wrapper">
+                                 <img src={item.imageUrl} alt={item.title} />
+                              </div>
+                              <div className="text-box-wrapper">
+                                 <div className="text-box">
+                                    <span>{item.date.slice(0, 10)}</span>
+                                    <h3 className="heading">{item.title}</h3>
+                                    <p
+                                       dangerouslySetInnerHTML={{
+                                          __html: item.details.substring(
+                                             0,
+                                             145
+                                          ),
+                                       }}
+                                    />
+                                 </div>
+                                 <div className="button-wrapper">Read More</div>
+                              </div>
                            </div>
                         </Link>
                      );
                   })}
                </Slider>
             )}
-            {state.error && <h1>error FETCH_NEWS_ERROR</h1>}
+            {state.error && <h2 id="error">{state.error}</h2>}
          </BlogWrapper>
       </>
    );

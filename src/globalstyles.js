@@ -1,8 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-
-
    *,
    *::before,
    *::after {
@@ -31,6 +29,7 @@ const GlobalStyles = createGlobalStyle`
     background-repeat: no-repeat;
     background-position: center center;
     color: ${({ theme }) => theme.colors?.side};
+    position: relative;
   }
   
   a{
@@ -128,6 +127,10 @@ const GlobalStyles = createGlobalStyle`
     a{
       color: ${({ theme }) => theme.colors?.white};
     }
+  }
+
+  #error{
+    color: ${({ theme }) => theme.colors?.red};
   }
 
   .navcontents{

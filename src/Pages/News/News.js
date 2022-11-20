@@ -27,10 +27,15 @@ const News = () => {
                   console.log("request canceled");
                } else {
                   setError(error.message);
+                  console.log(error.message);
                }
             });
       };
       getData();
+
+      return () => {
+         cancelToken.cancel();
+      };
    }, [id]);
 
    const { name } = newsData;
@@ -38,8 +43,8 @@ const News = () => {
    return (
       <HomeWrapper>
          <h1>News {id}</h1>
-         {newsData ? <h2>{name}</h2> : <h2>loading</h2>}
-         {error && <h2>{error}</h2>}
+         {newsData ? <h2>{name}</h2> : <h2>loading...</h2>}
+         {error && <h2 id="error">{error}</h2>}
       </HomeWrapper>
    );
 };

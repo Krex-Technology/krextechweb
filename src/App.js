@@ -26,6 +26,7 @@ const theme = {
       transparent: "transparent",
       green: "#02b35a",
       side: "#092240",
+      red: "#e0515f",
    },
 };
 
