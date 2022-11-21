@@ -178,38 +178,14 @@ const BlogSlider = () => {
                                        dangerouslySetInnerHTML={{
                                           __html: item.details.substring(
                                              0,
-                                             145
+                                             120
                                           ),
                                        }}
-                                    />
+                                    ></p>
                                  </div>
-                                 <div className="button-wrapper">Read More</div>
-                              </div>
-                           </div>
-                        </Link>
-                     );
-                  })}
-                  {state.news.map((item, index) => {
-                     return (
-                        <Link to={`news/${item._id}`} key={index}>
-                           <div className="card">
-                              <div className="image-wrapper">
-                                 <img src={item.imageUrl} alt={item.title} />
-                              </div>
-                              <div className="text-box-wrapper">
-                                 <div className="text-box">
-                                    <span>{item.date.slice(0, 10)}</span>
-                                    <h3 className="heading">{item.title}</h3>
-                                    <p
-                                       dangerouslySetInnerHTML={{
-                                          __html: item.details.substring(
-                                             0,
-                                             145
-                                          ),
-                                       }}
-                                    />
+                                 <div className="button-wrapper">
+                                    Read More...
                                  </div>
-                                 <div className="button-wrapper">Read More</div>
                               </div>
                            </div>
                         </Link>

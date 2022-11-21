@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const BlogWrapper = styled.div`
    width: 96%;
-   margin: auto;
+   margin: 5rem auto;
    margin-bottom: 40px;
 
    /* .wrapp {
@@ -25,7 +25,7 @@ export const BlogWrapper = styled.div`
    .card {
       position: relative;
       max-width: 97%;
-      background-color: #feefde;
+      /* background-color: #feefde; */
       border-radius: 8px;
       overflow: hidden;
       padding-bottom: 10px;
@@ -33,17 +33,20 @@ export const BlogWrapper = styled.div`
       margin: auto;
 
       .image-wrapper {
-         background: ${({ theme }) => theme.colors?.side};
-         width: auto;
+         /* background: ${({ theme }) => theme.colors?.side}; */
+         width: 100%;
          height: 200px;
          overflow: hidden;
+         object-fit: cover;
 
          img {
-            max-width: 100%;
-            height: auto;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             border-top-left-radius: 8px;
             border-top-right-radius: 8px;
          }
+
          img:hover {
             -webkit-transform: scale3d(1.2, 1.2, 1);
             transform: scale3d(1.2, 1.2, 1);
