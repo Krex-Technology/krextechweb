@@ -1,25 +1,29 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { HomeWrapper } from "../Home/HomeStyles";
 import axios from "axios";
+import { BASE_URL } from "../../App";
+import { NewsWrapper } from "./NewsStyles";
+import Loading from "../../Components/Loading/Loading";
 
 const News = () => {
    const { id } = useParams();
 
    const [newsData, setNewsData] = useState({});
+   const [loading, setLoading] = useState(false);
    const [error, setError] = useState("");
 
    useEffect(() => {
       const cancelToken = axios.CancelToken.source();
+      setLoading(true);
 
-      const getData = async () => {
-         await axios
-            .get(`https://jsonplaceholder.typicode.com/users/${id}`, {
+      const getData = () => {
+         axios
+            .get(`${BASE_URL}/news/${id}`, {
                cancelToken: cancelToken.token,
             })
             .then((response) => {
-               setNewsData(response.data);
+               setNewsData(response.data?.news);
                console.log(newsData);
             })
             .catch((error) => {
@@ -31,21 +35,35 @@ const News = () => {
                }
             });
       };
-      getData();
 
+      getData();
+      setLoading(false);
       return () => {
          cancelToken.cancel();
       };
    }, [id]);
 
-   const { name } = newsData;
+   // const { title, imageUrl, date, details, _id } = newsData;
 
    return (
-      <HomeWrapper>
-         <h1>News {id}</h1>
-         {newsData ? <h2>{name}</h2> : <h2>loading...</h2>}
+      <NewsWrapper>
+         {loading && <Loading />}
+         {newsData && (
+            <div>
+               <div className="header">
+                  <div className="imgWrapper">
+                     <img src={newsData.imageUrl} alt={newsData.title} />
+                  </div>
+                  <h1>{newsData.title}</h1>
+               </div>
+               <br />
+               <span>{newsData.date}</span>
+               <br />
+               <p>{newsData.details}</p>
+            </div>
+         )}
          {error && <h2 id="error">{error}</h2>}
-      </HomeWrapper>
+      </NewsWrapper>
    );
 };
 

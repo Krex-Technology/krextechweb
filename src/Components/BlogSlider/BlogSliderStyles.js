@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 export const BlogWrapper = styled.div`
    width: 96%;
-   margin: 5rem auto;
+   margin: 3rem auto;
    margin-bottom: 40px;
+   height: 450px;
 
    /* .wrapp {
       height: 450px;

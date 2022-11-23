@@ -4,6 +4,10 @@ export const Wrapper = styled.div`
    width: 100%;
    text-align: center;
 
+   h2{
+      text-transform: uppercase;;
+   }
+
    h3 {
       font-size: clamp(1rem, 7vw, 1.6rem);
       margin: 1.5rem auto;

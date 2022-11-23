@@ -6,10 +6,9 @@ const Offer = ({ srcref }) => {
    return (
       <Wrapper className="offer" ref={srcref}>
          <br />
-         <h3>
+         <h2>
             BriIliant Technology Solutions and Exceptional Financial Consultancy
-         </h3>
-         <br />
+         </h2>
          <br />
          <div className="holder">
             {service.map((item, index) => {

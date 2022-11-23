@@ -1,11 +1,14 @@
 import React from "react";
-import { HomeWrapper } from "../../Pages/Home/HomeStyles";
+import { LoaderWrapper } from "./LoaderStyles";
+import loader from "../../assets/images/loader.gif"
 
 const Loading = () => {
    return (
-      <HomeWrapper>
-         <h1>News Content is Loading...</h1>
-      </HomeWrapper>
+      <LoaderWrapper>
+         <div id="holder">
+               <img src={loader} alt="loader"/>
+         </div>
+      </LoaderWrapper>
    );
 };
 

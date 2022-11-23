@@ -8,8 +8,7 @@ import {
    BsFillArrowRightCircleFill,
 } from "react-icons/bs";
 import { Link } from "react-router-dom";
-
-const BASE_URL = "https://d-news-api.herokuapp.com";
+import { BASE_URL } from "../../App";
 
 const INITIAL_STATE = {
    loading: false,
@@ -161,7 +160,7 @@ const BlogSlider = () => {
          <h2> TRENDING IN THE FIN-TECH SPACE</h2>
          <BlogWrapper>
             {state.loading && <Loading />}
-            {state.news.length && (
+            {state.news && (
                <Slider {...settings}>
                   {state.news.map((item, index) => {
                      return (

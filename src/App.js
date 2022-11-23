@@ -30,6 +30,8 @@ const theme = {
    },
 };
 
+export const BASE_URL = "https://dkn-webapi.herokuapp.com";
+
 function App() {
    const [display, setDisplay] = useState(true);
    const [isScrolled, setIsScrolled] = useState(false);
