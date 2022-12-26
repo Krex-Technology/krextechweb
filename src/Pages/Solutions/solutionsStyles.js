@@ -43,7 +43,7 @@ export const SolutionWrapper = styled.div`
       .solutionWrapper {
          width: 100%;
          background: #eeeeee;
-         padding: 2rem 3rem;
+         padding: 2rem 2.5rem;
          border-radius: 5px;
       }
 
@@ -59,7 +59,7 @@ export const SolutionWrapper = styled.div`
    }
 
    @media screen and (max-width: 790px) {
-      padding: 4rem 0;
+      padding: 2.5rem 0;
       width: 97%;
    }
 `;

@@ -50,6 +50,8 @@ export const PeopleWrapper = styled.div`
 
       @media screen and (max-width: 599px) {
          grid-template-columns: repeat(1, 1fr);
+         padding: 3rem 0;
+         width: 100%;
       }
    }
 `;

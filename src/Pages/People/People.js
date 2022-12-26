@@ -56,7 +56,7 @@ const People = () => {
             <div className="heading-title">
                <h3>Meet Our Team </h3>
             </div>
-            <br />
+         
             <p>
                The Company activities are pioneer by the MD/CEO, Mr. Ayodeji
                Odunukan who has over 15 years in Information Technology and
