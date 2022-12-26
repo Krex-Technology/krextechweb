@@ -14,7 +14,7 @@ export const PeopleWrapper = styled.div`
          letter-spacing: 2px;
 
          h3 {
-            font-weight: 400;
+            font-weight: 600;
             text-transform: uppercase;
          }
       }

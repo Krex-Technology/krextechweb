@@ -74,7 +74,7 @@ export const EventsWrapper = styled.div`
 
    @media screen and (max-width: 790px) {
       width: 98%;
-      margin: 1rem auto;
+      margin: 0rem auto;
 
       h3 {
          margin-bottom: 1rem;
