@@ -4,7 +4,7 @@ export const HomeWrapper = styled.div`
    width: 90%;
    max-width: 1470px;
    margin: 6rem auto;
-   padding: 8rem 0 0 0;
+   padding: 6rem 0 0 0;
    position: relative;
 
    .top {

@@ -4,7 +4,7 @@ export const PeopleWrapper = styled.div`
    width: 90%;
    max-width: 1470px;
    margin: 6rem auto;
-   padding: 4rem 0 0 0;
+   padding: 5rem 0 0 0;
 
    .container {
       .heading-title {
@@ -59,7 +59,6 @@ export const PeopleWrapper = styled.div`
    }
 
    @media screen and (max-width: 599px) {
-      padding: 0rem 0;
       width: 98%;
    }
 `;
