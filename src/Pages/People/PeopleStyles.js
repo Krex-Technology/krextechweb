@@ -59,6 +59,7 @@ export const PeopleWrapper = styled.div`
    }
 
    @media screen and (max-width: 599px) {
+      padding: 2.5rem 0;
       width: 98%;
    }
 `;

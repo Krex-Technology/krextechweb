@@ -4,7 +4,7 @@ export const SolutionWrapper = styled.div`
    width: 90%;
    max-width: 1470px;
    margin: 6rem auto;
-   padding: 4rem 0 0 0;
+   padding: 5.5rem 0 0 0;
    position: relative;
 
    h1 {
