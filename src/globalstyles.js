@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
    }
  
    html {
-      font-size: 62.5%;
+      font-size: 64.5%;
    }
 
    body {
@@ -215,6 +215,14 @@ const GlobalStyles = createGlobalStyle`
       h4{
         a,p{
           color: ${({ theme }) => theme.colors.side};
+
+          :focus, :active {
+            padding-bottom: 1.2rem;
+                border-bottom: 4px solid ${({ theme }) => theme.colors.side};
+                ${'' /* text-decoration: underline; */}
+
+                
+              }
         }
       }
     }

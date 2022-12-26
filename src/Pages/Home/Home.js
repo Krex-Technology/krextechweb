@@ -21,6 +21,7 @@ const Home = () => {
          <br />
          <br />
          <BlogSlider />
+         <br/>
       </HomeWrapper>
    );
 };

@@ -30,7 +30,7 @@ const theme = {
    },
 };
 
-export const BASE_URL = "https://dkn-webapi.herokuapp.com";
+export const BASE_URL = "https://plum-nutty-oyster.cyclic.app";
 
 function App() {
    const [display, setDisplay] = useState(true);

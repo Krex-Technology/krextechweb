@@ -7,7 +7,14 @@ export const SolutionWrapper = styled.div`
    padding: 8rem 0 0 0;
    position: relative;
 
+   h1 {
+      text-align: center;
+      margin: auto;
+   }
+
    .divv {
+      text-align: center;
+      margin: 1.5rem auto;
       height: 4px;
       background: ${({ theme }) => theme.colors?.side};
       width: 70px;
@@ -45,6 +52,9 @@ export const SolutionWrapper = styled.div`
          color: ${({ theme }) => theme.colors?.white};
          transform: scale(1.05);
          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+         -webkit-transform: scale3d(1.2, 1.2, 1);
+         transform: scale3d(1.05, 1.05, 1);
+         transition: all 0.5s linear;
       }
    }
 
