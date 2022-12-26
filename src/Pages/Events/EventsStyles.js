@@ -11,7 +11,7 @@ export const EventsWrapper = styled.div`
       font-size: 3em;
       color: ${({ theme }) => theme.colors?.side};
       text-align: center;
-      font-weight: 100;
+      font-weight: 600;
       text-shadow: 0 0 1px #48c8ff;
 
       @media screen and (max-width: 790px) {
@@ -40,7 +40,7 @@ export const EventsWrapper = styled.div`
 
    .info- {
       text-align: center;
-      font-weight: 100;
+      font-weight: 600;
    }
 
    .gridwrapper {
