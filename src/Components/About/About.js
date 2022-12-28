@@ -9,7 +9,7 @@ const About = ({ abtref }) => {
       <FlexWrap>
          <AbtWrapper>
             <SubAbout />
-            <br/>
+            <br />
             <h1>Service With Extensive Years Of Experience</h1>
             <div className="div"></div>
             <p>
@@ -29,9 +29,19 @@ const About = ({ abtref }) => {
                   <a href="tel:+2349030639862">+234 903 0639 862</a>
                </h1>
             </div>
+            <p>
+               Our Vision: "To build and empower client with top-notch
+               technological service while maintaining excellent service
+               delivery
+               <br />
+               <br />
+               Our Mission Statement: To deliver innovative top-class service to
+               meet the yearning of individuals, businesses and Organization.
+            </p>
          </AbtWrapper>
          <div className="cont">
             <img src={dcb2} alt="tech image" />
+            <div></div>
          </div>
       </FlexWrap>
    );

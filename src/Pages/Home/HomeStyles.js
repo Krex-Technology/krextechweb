@@ -40,6 +40,7 @@ export const HomeWrapper = styled.div`
 
       img {
          width: 100%;
+         /* box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2); */
       }
    }
 

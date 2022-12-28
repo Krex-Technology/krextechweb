@@ -24,6 +24,8 @@ const GlobalStyles = createGlobalStyle`
     line-height: 2.5rem;
     background: #e1e7ed;
     background: #fafafc;
+    /* background: rgba(239, 239, 239, 255); */
+    /* background: red; */
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
