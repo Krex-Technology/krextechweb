@@ -12,6 +12,7 @@ import People from "./Pages/People/People";
 import Solutions from "./Pages/Solutions/Solutions";
 import ContactUS from "./Pages/Contact/Contact";
 import News from "./Pages/News/News";
+import Page404 from "./Pages/404/Page404";
 
 const theme = {
    colors: {
@@ -57,6 +58,7 @@ function App() {
             <Route path="/our_people" element={<People />} />
             <Route path="/our_solutions" element={<Solutions />} />
             <Route path="/news/:id" element={<News />} />
+            <Route path="*" element={<Page404 />} />
          </Routes>
          <div className="navv">
             {" "}
