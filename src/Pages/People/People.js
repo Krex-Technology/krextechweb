@@ -2,6 +2,7 @@
 import { PeopleWrapper } from "./PeopleStyles";
 import md from "../../assets/images/wwwww.webp"
 import bas from "../../assets/images/wwwwww.webp"
+import lola from "../../assets/images/lola.webp"
 // import axios from "axios";
 
 const People = () => {
@@ -88,14 +89,14 @@ const People = () => {
                   <div className="team-member">
                      <div className="team-img">
                         <img
-                           src="https://image.freepik.com/free-photo/elegant-man-with-thumbs-up_1149-1595.jpg"
-                           alt="team member"
+                           src={lola}
+                           alt="Ololade Tikare"
                         />
                      </div>
                   </div>
                   <div className="team-title">
-                     <h4>Franklin Harbet</h4>
-                     <p>HR Manager</p>
+                     <h4>Ololade Tikare</h4>
+                     <p>HOD HRM / STRATEGIC PLANNING</p>
                   </div>
                </div>
 
