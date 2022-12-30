@@ -1,6 +1,6 @@
 export const catevents = [
    {
-      text: "10th Year Anniversary and End Of Year Party - 29th OCT 2022",
+      text: "10th Year Anniversary and End Of Year Party - 18th DEC 2022",
       image1:
          "https://res.cloudinary.com/dayonuel/image/upload/v1672427196/1672427182029_immhzx.jpg",
       image2:
