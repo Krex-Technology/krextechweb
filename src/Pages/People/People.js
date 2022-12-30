@@ -1,8 +1,8 @@
 // import React, { useState, useEffect } from "react";
 import { PeopleWrapper } from "./PeopleStyles";
-import md from "../../assets/images/wwwww.webp"
-import bas from "../../assets/images/wwwwww.webp"
-import lola from "../../assets/images/lola.webp"
+import md from "../../assets/images/wwwww.webp";
+import bas from "../../assets/images/wwwwww.webp";
+import lola from "../../assets/images/lola.webp";
 // import axios from "axios";
 
 const People = () => {
@@ -57,7 +57,7 @@ const People = () => {
             <div className="heading-title">
                <h3>Meet Our Team </h3>
             </div>
-         
+
             <p>
                The Company activities are pioneer by the MD/CEO, Mr. Ayodeji
                Odunukan who has over 15 years in Information Technology and
@@ -73,10 +73,7 @@ const People = () => {
                <div className="col-md-4 col-sm-4">
                   <div className="team-member">
                      <div className="team-img">
-                        <img
-                           src={md}
-                           alt="Managing Director"
-                        />
+                        <img src={md} alt="Managing Director" />
                      </div>
                   </div>
                   <div className="team-title">
@@ -88,25 +85,19 @@ const People = () => {
                <div className="col-md-4 col-sm-4">
                   <div className="team-member">
                      <div className="team-img">
-                        <img
-                           src={lola}
-                           alt="Ololade Tikare"
-                        />
+                        <img src={lola} alt="Ololade Tikare" />
                      </div>
                   </div>
                   <div className="team-title">
                      <h4>Ololade Tikare</h4>
-                     <p>HOD HRM / STRATEGIC PLANNING</p>
+                     <p>Head of HR/Admin & Strategic Planning</p>
                   </div>
                </div>
 
                <div className="col-md-4 col-sm-4">
                   <div className="team-member">
                      <div className="team-img">
-                        <img
-                           src={bas}
-                           alt="Bassey Elias"
-                        />
+                        <img src={bas} alt="Bassey Elias" />
                      </div>
                   </div>
                   <div className="team-title">
