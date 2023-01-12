@@ -157,7 +157,7 @@ const BlogSlider = () => {
    };
    return (
       <>
-         <h2> TRENDING IN THE FIN-TECH SPACE</h2>
+         <h2> TRENDING IN OUR SPACE</h2>
          <BlogWrapper>
             {state.loading && <Loading />}
             {state.news && (

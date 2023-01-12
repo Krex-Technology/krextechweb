@@ -58,6 +58,10 @@ export const BlogWrapper = styled.div`
 
    .text-box-wrapper {
       padding: 20px;
+
+      h3{
+         text-transform: uppercase;
+      }
    }
 
    .heading::after {
