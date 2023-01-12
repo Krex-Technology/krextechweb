@@ -8,7 +8,7 @@ const Solutions = () => {
    return (
       <SolutionWrapper>
          <h2>We profer solutions in the following areas</h2>
-         <h2>Finacial Consultancy</h2>
+         <h2>Financial Consultancy</h2>
          <p>
             Our expertise is anchored on our extensive business knowledge and
             technical know-how. We help our microfinance bank & SMEs with focus

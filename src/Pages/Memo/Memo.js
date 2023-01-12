@@ -7,7 +7,7 @@ const Memo = () => {
          <Wrapper>
             <h3>DENUKAN NETWORK LIMITED</h3>
             <h3>RC NO: 1513337</h3>
-            <h3>ALTERATION OF MEMORANDUM OF ASSOCIATION</h3>
+            <h3>MEMORANDUM OF ASSOCIATION AND ARTICLE OF ASSOCIATION</h3>
             <br />
             <h4>
                At the virtual Extraordinary General Meeting of Denukan Netowrk

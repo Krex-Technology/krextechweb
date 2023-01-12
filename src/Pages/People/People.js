@@ -3,6 +3,9 @@ import { PeopleWrapper } from "./PeopleStyles";
 import md from "../../assets/images/wwwww.webp";
 import bas from "../../assets/images/wwwwww.webp";
 import lola from "../../assets/images/lola.webp";
+import kay from "../../assets/images/kayy.webp";
+import seyi from "../../assets/images/seyi.webp";
+import nico from "../../assets/images/nico.webp";
 // import axios from "axios";
 
 const People = () => {
@@ -64,7 +67,7 @@ const People = () => {
                brings his wealth of experience to the Company. Mr. Elias Bassey,
                Head of Finance has over 18 years working experience in various
                industries and sectors of the economy. Finally, the Head of
-               HR/Admin Mrs. Ololade Odunukan who is a Licensed HR Practitioner.
+               HR/Admin Mrs. Ololade Tikare who is a Licensed HR Practitioner.
                We are a company for excellence and will expect the best as you
                join our family.
             </p>
@@ -90,7 +93,7 @@ const People = () => {
                   </div>
                   <div className="team-title">
                      <h4>Ololade Tikare</h4>
-                     <p>Head of HR/Admin & Strategic Planning</p>
+                     <p>Director of HR/Admin & Strategic Planning</p>
                   </div>
                </div>
 
@@ -102,7 +105,46 @@ const People = () => {
                   </div>
                   <div className="team-title">
                      <h4>Bassey Elias</h4>
-                     <p>Head of Finance / Banking operations</p>
+                     <p>Director of Finance / Banking operations</p>
+                  </div>
+               </div>
+
+
+               <div className="col-md-4 col-sm-4">
+                  <div className="team-member">
+                     <div className="team-img">
+                        <img src={kay} alt="Kayode  Ariyo" />
+                     </div>
+                  </div>
+                  <div className="team-title">
+                     <h4>Ariyo Kayode Olugbenga</h4>
+                     <p>Head of Accounts</p>
+                  </div>
+               </div>
+
+               <div className="col-md-4 col-sm-4">
+                  <div className="team-member">
+                     <div className="team-img">
+                        <img src={nico} alt="Anozie Nicholas" />
+                     </div>
+                  </div>
+                  <div className="team-title">
+                     <h4>Anozie Amuneke Nicholas</h4>
+                     <p>Head of IT Department</p>
+                  </div>
+               </div>
+
+               
+
+               <div className="col-md-4 col-sm-4">
+                  <div className="team-member">
+                     <div className="team-img">
+                        <img src={seyi} alt="Fatumole Oluwaseyi Araoluwa" />
+                     </div>
+                  </div>
+                  <div className="team-title">
+                     <h4>Fatumole Oluwaseyi Araoluwa</h4>
+                     <p>Chief Technology Officer (CTO)</p>
                   </div>
                </div>
             </div>

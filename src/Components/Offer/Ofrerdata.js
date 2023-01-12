@@ -17,7 +17,7 @@ export const service = [
       image: photo2,
    },
    {
-      text: "Sales and Installation Of CCTV ,Internet Services, Intercom and ATM",
+      text: "Sales and Installation Of CCTV, Access Control Doors, Intercom and ATM",
       image: photo3,
    },
 ];
