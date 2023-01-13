@@ -36,6 +36,25 @@ const News = () => {
             });
       };
 
+      // const dater = ()=>{
+      //    let today = new Date();
+
+      // const currentHours = today.getHours();
+      // const Hours = ("0" + currentHours).slice(-2);
+
+      // const currentMinutes = today.getMinutes();
+      // const minute = ("0" + currentMinutes).slice(-2);
+
+      // const currentSeconds = today.getSeconds();
+      // const seconds = ("0" + currentSeconds).slice(-2);
+
+      // const currentMonth = today.getMonth() + 1;
+      // const month = ("0" + currentMonth).slice(-2);
+
+      // const currentDay = today.getDate();
+      // const day = ("0" + currentDay).slice(-2);
+      // }
+
       getData();
       setLoading(false);
       return () => {
@@ -57,7 +76,7 @@ const News = () => {
                   <h1>{newsData.title}</h1>
                </div>
                <br />
-               <span>{newsData.date}</span>
+               <span>{newsData.date.slice(0, 10)}</span>
                <br />
                <p>{newsData.details}</p>
             </div>
