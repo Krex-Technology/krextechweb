@@ -28,32 +28,12 @@ const News = () => {
             })
             .catch((error) => {
                if (axios.isCancel(error)) {
-                  console.log("request canceled");
                } else {
                   setError(error.message);
                   console.log(error.message);
                }
             });
       };
-
-      // const dater = ()=>{
-      //    let today = new Date();
-
-      // const currentHours = today.getHours();
-      // const Hours = ("0" + currentHours).slice(-2);
-
-      // const currentMinutes = today.getMinutes();
-      // const minute = ("0" + currentMinutes).slice(-2);
-
-      // const currentSeconds = today.getSeconds();
-      // const seconds = ("0" + currentSeconds).slice(-2);
-
-      // const currentMonth = today.getMonth() + 1;
-      // const month = ("0" + currentMonth).slice(-2);
-
-      // const currentDay = today.getDate();
-      // const day = ("0" + currentDay).slice(-2);
-      // }
 
       getData();
       setLoading(false);
@@ -62,7 +42,17 @@ const News = () => {
       };
    }, [id]);
 
-   // const { title, imageUrl, date, details, _id } = newsData;
+   const { title, imageUrl, date, details } = newsData;
+
+   const mydate = new Date(date);
+
+   const currentMonth = mydate.getMonth() + 1;
+   const month = ("0" + currentMonth).slice(-2);
+
+   const currentDay = mydate.getDate();
+   const day = ("0" + currentDay).slice(-2);
+
+   const usableDate = mydate.getFullYear() + "-" + month + "-" + day;
 
    return (
       <NewsWrapper>
@@ -71,14 +61,14 @@ const News = () => {
             <div>
                <div className="header">
                   <div className="imgWrapper">
-                     <img src={newsData.imageUrl} alt={newsData.title} />
+                     <img src={imageUrl} alt={title} />
                   </div>
-                  <h1>{newsData.title}</h1>
+                  <h1>{title}</h1>
                </div>
                <br />
-               <span>{newsData.date.slice(0, 10)}</span>
+               {usableDate === "NaN-aN-aN" ? "" : <span>{usableDate}</span>}
                <br />
-               <p>{newsData.details}</p>
+               <p>{details}</p>
             </div>
          )}
          {error && <h2 id="error">{error}</h2>}
