@@ -109,7 +109,6 @@ const People = () => {
                   </div>
                </div>
 
-
                <div className="col-md-4 col-sm-4">
                   <div className="team-member">
                      <div className="team-img">
@@ -134,17 +133,15 @@ const People = () => {
                   </div>
                </div>
 
-               
-
                <div className="col-md-4 col-sm-4">
                   <div className="team-member">
                      <div className="team-img">
-                        <img src={seyi} alt="Fatumole Oluwaseyi Araoluwa" />
+                        <img src={seyi} alt="Oluwaseyi Fatumole" />
                      </div>
                   </div>
                   <div className="team-title">
-                     <h4>Fatumole Oluwaseyi Araoluwa</h4>
-                     <p>Chief Technology Officer (CTO)</p>
+                     <h4>Oluwaseyi Fatumole</h4>
+                     <p>Lead Software Engineer</p>
                   </div>
                </div>
             </div>
