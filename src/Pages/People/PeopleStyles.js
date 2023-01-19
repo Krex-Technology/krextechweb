@@ -19,7 +19,8 @@ export const PeopleWrapper = styled.div`
          }
       }
 
-      .flex {
+      .flex,
+      .flex4 {
          margin: auto;
          display: grid;
          grid-template-columns: repeat(3, 1fr);
@@ -46,16 +47,36 @@ export const PeopleWrapper = styled.div`
          }
 
          @media screen and (max-width: 999px) {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             width: 100%;
          }
 
+         @media screen and (max-width: 699px) {
+            grid-template-columns: repeat(1, 1fr);
+            padding: 3rem 0;
+            width: 100%;
+         }
+      }
+
+      .cent{
+         text-align: center;
+      }
+
+      .flex4 {
+         grid-template-columns: repeat(4, 1fr);
+
+         @media screen and (max-width: 799px) {
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+         }
+   
          @media screen and (max-width: 599px) {
             grid-template-columns: repeat(1, 1fr);
             padding: 3rem 0;
             width: 100%;
          }
       }
+
    }
 
    @media screen and (max-width: 599px) {

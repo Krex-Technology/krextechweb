@@ -6,6 +6,7 @@ import lola from "../../assets/images/lola.webp";
 import kay from "../../assets/images/kayy.webp";
 import seyi from "../../assets/images/seyi.webp";
 import nico from "../../assets/images/nico.webp";
+import alex from "../../assets/images/alex.webp";
 // import axios from "axios";
 
 const People = () => {
@@ -108,7 +109,12 @@ const People = () => {
                      <p>Director of Finance / Banking operations</p>
                   </div>
                </div>
+            </div>
+            <br />
+            <h3 className="cent">Team Leads</h3>
+            <br />
 
+            <div className="flex4">
                <div className="col-md-4 col-sm-4">
                   <div className="team-member">
                      <div className="team-img">
@@ -142,6 +148,18 @@ const People = () => {
                   <div className="team-title">
                      <h4>Oluwaseyi Fatumole</h4>
                      <p>Lead Software Engineer</p>
+                  </div>
+               </div>
+
+               <div className="col-md-4 col-sm-4">
+                  <div className="team-member">
+                     <div className="team-img">
+                        <img src={alex} alt="Oluwaseyi Fatumole" />
+                     </div>
+                  </div>
+                  <div className="team-title">
+                     <h4>Alex Ighereje</h4>
+                     <p>Head of Admin</p>
                   </div>
                </div>
             </div>
