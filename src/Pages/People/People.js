@@ -1,7 +1,7 @@
 // import React, { useState, useEffect } from "react";
 import { PeopleWrapper } from "./PeopleStyles";
 import md from "../../assets/images/wwwww.webp";
-import bas from "../../assets/images/wwwwww.webp";
+import bas from "../../assets/images/bassey.webp";
 import lola from "../../assets/images/lola.webp";
 import kay from "../../assets/images/kayy.webp";
 import seyi from "../../assets/images/seyi.webp";
