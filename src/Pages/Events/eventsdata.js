@@ -6,9 +6,9 @@ export const catevents = [
       image2:
          "https://res.cloudinary.com/dayonuel/image/upload/v1674831790/new-image_20_gginmr.jpg",
       image3:
-         "https://res.cloudinary.com/dayonuel/image/upload/v1674831789/new-image_21_fzkuc3.jpg",
+         "https://res.cloudinary.com/dayonuel/image/upload/v1674834410/new-image_22_r4e008.jpg",
       image4:
-         "https://res.cloudinary.com/dayonuel/image/upload/v1674831787/new-image_18_pjr7zj.jpg",
+         "https://res.cloudinary.com/dayonuel/image/upload/v1674834411/new-image_23_nih8cp.jpg",
       image5:
          "https://res.cloudinary.com/dayonuel/image/upload/v1674831785/new-image_16_sj9bp1.jpg",
    },
