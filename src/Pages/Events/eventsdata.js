@@ -1,21 +1,47 @@
 export const catevents = [
    {
-      text: "10th Year Anniversary and End Of Year Party - 18th DEC 2022",
+      text: "Leadership, Coaching and Mentoring Training - 27th Jan 2023",
       image1:
-         "https://res.cloudinary.com/dayonuel/image/upload/v1672427196/1672427182029_immhzx.jpg",
+         "https://res.cloudinary.com/dayonuel/image/upload/v1674831790/new-image_19_afcync.jpg",
       image2:
-      "https://res.cloudinary.com/dayonuel/image/upload/v1672427056/1672427045395_krqusi.jpg",
+         "https://res.cloudinary.com/dayonuel/image/upload/v1674831790/new-image_20_gginmr.jpg",
       image3:
-      "https://res.cloudinary.com/dayonuel/image/upload/v1672427149/1672427137779_qabs2s.jpg",
+         "https://res.cloudinary.com/dayonuel/image/upload/v1674831789/new-image_21_fzkuc3.jpg",
       image4:
-      "https://res.cloudinary.com/dayonuel/image/upload/v1672426886/1672426774332_uttlpb.jpg",
+         "https://res.cloudinary.com/dayonuel/image/upload/v1674831787/new-image_18_pjr7zj.jpg",
       image5:
-      "https://res.cloudinary.com/dayonuel/image/upload/v1672427109/1672427084092_uunpjj.jpg",
+         "https://res.cloudinary.com/dayonuel/image/upload/v1674831785/new-image_16_sj9bp1.jpg",
    },
    {
       text: "",
       image1:
-      "https://res.cloudinary.com/dayonuel/image/upload/v1672427010/1672426997386_x0ef4e.jpg",
+         "https://res.cloudinary.com/dayonuel/image/upload/v1674831786/new-image_12_a65lh2.jpg",
+      image2:
+         "https://res.cloudinary.com/dayonuel/image/upload/v1674831785/new-image_15_cjop8s.jpg",
+      image3:
+         "https://res.cloudinary.com/dayonuel/image/upload/v1674831787/new-image_17_gm9yza.jpg",
+      image4:
+         "https://res.cloudinary.com/dayonuel/image/upload/v1674831784/new-image_14_m8b2pp.jpg",
+      image5:
+         "https://res.cloudinary.com/dayonuel/image/upload/v1674831783/new-image_13_pp1taz.jpg",
+   },
+   {
+      text: "10th Year Anniversary and End Of Year Party - 18th DEC 2022",
+      image1:
+         "https://res.cloudinary.com/dayonuel/image/upload/v1672427196/1672427182029_immhzx.jpg",
+      image2:
+         "https://res.cloudinary.com/dayonuel/image/upload/v1672427056/1672427045395_krqusi.jpg",
+      image3:
+         "https://res.cloudinary.com/dayonuel/image/upload/v1672427149/1672427137779_qabs2s.jpg",
+      image4:
+         "https://res.cloudinary.com/dayonuel/image/upload/v1672426886/1672426774332_uttlpb.jpg",
+      image5:
+         "https://res.cloudinary.com/dayonuel/image/upload/v1672427109/1672427084092_uunpjj.jpg",
+   },
+   {
+      text: "",
+      image1:
+         "https://res.cloudinary.com/dayonuel/image/upload/v1672427010/1672426997386_x0ef4e.jpg",
       image2:
          "https://res.cloudinary.com/dayonuel/image/upload/v1672426891/1672426825462_ukvhcs.jpg",
       image3:
