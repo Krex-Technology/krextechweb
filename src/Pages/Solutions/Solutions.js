@@ -1,8 +1,7 @@
 import React from "react";
-import { solutionData } from "./solutionsData";
+import { solutionData, solutionDataOne } from "./solutionsData";
 import { solutionDataTwo } from "./solutionsData";
 import { SolutionWrapper } from "./solutionsStyles";
-
 
 const Solutions = () => {
    return (
@@ -11,18 +10,37 @@ const Solutions = () => {
          <h2>Financial Consultancy</h2>
          <p>
             Our expertise is anchored on our extensive business knowledge and
-            technical know-how. We help our microfinance bank & SMEs with focus
-            on strategic, operational, financial and capital needs of their
-            businesses.
+            technical know-how. We help our microfinance bank (FinTechs) & SMEs
+            with focus on strategic, operational, financial and capital needs of
+            their businesses.
          </p>
          <p>
             We provide advisory services on the full spectrum of financial and
-            transactional challenges faced by microfinance bank & SMEs which may
-            hinder their business performance. In this light we do
+            transactional challenges faced by microfinance bank (FinTechs) &
+            SMEs which may hinder their business performance. In this light we
+            do
          </p>
          <br />
          <div className="solutionsWrapper">
             {solutionData.map((item, index) => {
+               return (
+                  <div key={index} className="solutionWrapper">
+                     <h3>{item.title}</h3>
+                     <p>{item.content}</p>
+                  </div>
+               );
+            })}
+         </div>
+         <br />
+         <br />
+         <h2>FinTech</h2>
+         <p>
+            We help FinTechs get licence(s) from the Central Bank of
+            Nigeria (CBN) in regards to the following services:
+         </p>
+         <br />
+         <div className="solutionsWrapper">
+            {solutionDataOne.map((item, index) => {
                return (
                   <div key={index} className="solutionWrapper">
                      <h3>{item.title}</h3>

@@ -29,6 +29,40 @@ export const solutionData = [
    },
 ];
 
+export const solutionDataOne = [
+   {
+      title: "FinTech",
+      content: "Agency Banking",
+   },
+   {
+      title: "FinTech",
+      content: "Payment Terminal Service Provider (PTSP)",
+   },
+   {
+      title: "FinTech",
+      content: "Payment Solutions Service Provider (PSSP",
+   },
+   {
+      title: "FinTech",
+      content: "Mobile Money Operator (MMO)",
+   },
+   {
+      title: "FinTech",
+      content: "Microfinance Bank Licence",
+   },
+   {
+      title: "FinTech",
+      content: "Commercial Bank Licence",
+   },
+   {
+      title: "FinTech",
+      content: "International Money Transfer Operators (IMTO)",
+   },   {
+      title: "FinTech",
+      content: "Super Agent Licence",
+   },
+];
+
 export const solutionDataTwo = [
    {
       title: "Technology",
