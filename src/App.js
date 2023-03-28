@@ -31,7 +31,7 @@ const theme = {
    },
 };
 
-export const BASE_URL = "https://plum-nutty-oyster.cyclic.app";
+export const BASE_URL = "https://cerise-life-jacket.cyclic.app";
 
 function App() {
    const [display, setDisplay] = useState(true);
