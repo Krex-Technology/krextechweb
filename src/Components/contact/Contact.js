@@ -68,11 +68,11 @@ const Contact = () => {
                      <h1>CONTACT US</h1>
                      <span>
                         Mail:
-                        <a href="mailto:info@denukan.com"> info@denukan.com</a>
+                        <a href="mailto:info@krextech.com"> info@krextech.com</a>
                      </span>
                      <span>
                         Telephone:{" "}
-                        <a href="tel:+2349030639862">+234 903 0639 862</a>
+                        <a href="tel:+2347084200305">+234 708 4200 305</a>
                      </span>
                      <input
                         id="name"
