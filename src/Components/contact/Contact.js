@@ -132,23 +132,22 @@ const Contact = () => {
          </OfficesWrapper>
          <OfficesWrapper>
             <div className="card">
-               <h3>Denukan Network Limited, Ojota</h3>
+               <h3>Krex TEchnologies</h3>
                <a href="http://maps.google.com/maps?q=denukan+network+limited+ojota">
                   <h4>
-                     Block 17, Suits 2 Odua international shopping complex,
-                     Ojota, Lagos
+                     9 Lausi Lane, Ijebu-Ode Ogun State
                   </h4>
                </a>
                <p>Click address to see location on map</p>
             </div>
 
-            <div className="card">
+            {/* <div className="card">
                <h3>Idi-Igba Ilora Oyo Denukan CICS Limited</h3>
                <a href="http://maps.google.com/maps?q=1,+idi-igba,+ilora">
                   <h4>1, Idi-igba, Old Oyo Ibadan Road Ilora Oyo State</h4>
                </a>
                <p>Click address to see location on map</p>
-            </div>
+            </div> */}
          </OfficesWrapper>
          <br />
          <br />
