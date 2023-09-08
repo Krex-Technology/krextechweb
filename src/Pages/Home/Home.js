@@ -10,8 +10,8 @@ const Home = () => {
       <HomeWrapper>
          <div className="top">
             <div className="first-child">
-               <h1>Denukan Network Limited.</h1>
-               <h2>Integrating tech-centered solutions into everyday life.</h2>
+               <h1>Krex Technology.</h1>
+               <h2>Integrating tech-centered software solutions into everyday life.</h2>
             </div>
             <div className="imgWrapper">
                <img src={dcb} alt="illustration for core tech" />
@@ -21,7 +21,7 @@ const Home = () => {
          <Offer />
          <br />
          <br />
-         <BlogSlider />
+         {/* <BlogSlider /> */}
          <br />
       </HomeWrapper>
    );

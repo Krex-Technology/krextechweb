@@ -17,16 +17,16 @@ import Page404 from "./Pages/404/Page404";
 const theme = {
    colors: {
       white: "#ffffff",
-      black: "#000000",
-      primary: "#173361",
+      black:  "#673ab7" ,
+      primary:  "#673ab7" ,
       button: "#2299fe",
       buttonhover: "#3f75cc",
-      grey01: "#fbfbfb",
-      grey02: "#e2e2e2",
+      grey01:  "#673ab7" ,
+      grey02:  "#673ab7" ,
       inputhover: "#f3f0f0c3",
       transparent: "transparent",
       green: "#02b35a",
-      side: "#092240",
+      side:  "#673ab7" ,
       red: "#e0515f",
    },
 };
@@ -51,12 +51,12 @@ function App() {
          <GlobalStyles />
          <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/memo" element={<Memo />} />
-            <Route path="/events" element={<Events />} />
+            {/* <Route path="/memo" element={<Memo />} /> */}
+            {/* <Route path="/events" element={<Events />} /> */}
             <Route path="/contact_us" element={<ContactUS />} />
-            <Route path="/about_us" element={<About />} />
-            <Route path="/our_people" element={<People />} />
-            <Route path="/our_solutions" element={<Solutions />} />
+            {/* <Route path="/about_us" element={<About />} /> */}
+            {/* <Route path="/our_people" element={<People />} /> */}
+            {/* <Route path="/our_solutions" element={<Solutions />} /> */}
             <Route path="/news/:id" element={<News />} />
             <Route path="*" element={<Page404 />} />
          </Routes>
@@ -78,21 +78,21 @@ function App() {
                   {/* <h4>
                      <Link to="/about_us">About us</Link>
                   </h4> */}
-                  <h4>
+                  {/* <h4>
                      <Link to="/events">Events</Link>
-                  </h4>
-                  <h4>
+                  </h4> */}
+                  {/* <h4>
                      <Link to="/our_solutions">Our solutions</Link>
-                  </h4>
-                  <h4>
+                  </h4> */}
+                  {/* <h4>
                      <Link to="/our_people">Our people</Link>
-                  </h4>
+                  </h4> */}
                   <h4>
                      <Link to="/contact_us">Contact us</Link>
                   </h4>
-                  <h4>
+                  {/* <h4>
                      <Link to="/memo">Memo</Link>
-                  </h4>
+                  </h4> */}
                </div>
             ) : null}
          </div>
@@ -101,7 +101,7 @@ function App() {
             <div className="width">
                <span>
                   <Link to="/">
-                     <h1>Denukan</h1>
+                     <h1>KREX TECH</h1>
                      {/* <p>NETWORK LIMITED</p> */}
                   </Link>
                </span>
@@ -112,7 +112,7 @@ function App() {
                   {/* <h4>
                      <Link to="/about_us">About us</Link>
                   </h4> */}
-                  <h4>
+                  {/* <h4>
                      <Link to="/events">Events</Link>
                   </h4>
                   <h4>
@@ -120,23 +120,23 @@ function App() {
                   </h4>
                   <h4>
                      <Link to="/our_people">Our people</Link>
-                  </h4>
+                  </h4> */}
                   <h4>
                      <Link to="/contact_us">Contact us</Link>
                   </h4>
-                  <h4>
+                  {/* <h4>
                      <Link to="/memo">Memo</Link>
-                  </h4>
+                  </h4> */}
                </div>
             </div>
          </div>
 
          <div className="footer">
             <h4>
-               Copyright &copy; 2022 Denukan Network Limited All Rights Reserved
+               Copyright &copy; 2023 Krex Technology All Rights Reserved
             </h4>
             <p>
-               Denukan Network Limited is duly registered under the law of the
+               Krex Technology is duly registered under the law of the
                Federal Republic of Nigeria.
             </p>
          </div>

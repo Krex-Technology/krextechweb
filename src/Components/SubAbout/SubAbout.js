@@ -11,7 +11,7 @@ const SubAbout = () => {
       <>
          <h1>Basic Company Information</h1>
          <h3>
-            Denukan Network Limited is duly registered under the law of the
+            Krex Technology is duly registered under the law of the
             Federal Republic of Nigeria. The Company is organized principally to
             provide quality services to its various customers in the areas of
             Technology and Financial Consultancy.
@@ -21,16 +21,11 @@ const SubAbout = () => {
          <h3>
             <ul>
                <li>Internet Service Provider</li>
-               <li>Core Banking Software Application Provider</li>
-               <li>Consultancy and Advisory Services to MFI and MFB</li>
-               <li>Telecommunications, Media and Entertainment Consultant</li>
-               <li>Sales of Access Control and Installation Of CCTV Cameras</li>
-               <li>Sales and Installation Of ATM</li>
-               <li>
-                  Sales and Service of Inverters, Inverter batteries and solar
-                  panels{" "}
-               </li>
-               <li>Asset Management</li>
+               <li>Core Software Application Provider</li>
+               <li>Development and Integration of embedded and distributed systems</li>
+               <li>Software as a service(saas)</li>
+               <li>Cloud service and solutions</li>
+               <li>Platform as a service(Paas)</li>
             </ul>
          </h3>
       </>
