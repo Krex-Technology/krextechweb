@@ -2,7 +2,7 @@ import { HomeWrapper } from "./HomeStyles";
 import dcb from "../../assets/images/dcb11.png";
 import About from "../../Components/About/About";
 import Offer from "../../Components/Offer/Offer";
-import BlogSlider from "../../Components/BlogSlider/BlogSlider";
+// import BlogSlider from "../../Components/BlogSlider/BlogSlider";
 
 
 const Home = () => {
